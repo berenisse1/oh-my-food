@@ -237,3 +237,33 @@ display: flex;
 :hover.fa-heart { 
     background-color:linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
+
+/*******footer******/
+footer{
+    display:flex ;
+    background-color: #353535;
+    padding: 30px ; 
+}
+
+footer .logo-footer{
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+footer .lien-footer {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    list-style: none;
+    justify-content: space-between;
+    font-size: 16px;
+    padding: 0px 20px 20px 0px;  
+    gap: 7px;    
+}
+
+footer .style-liens{
+    display: flex;
+    align-items: stretch;
+    color: #fff;
+    gap: 10px;
+}
+
