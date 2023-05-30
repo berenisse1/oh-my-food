@@ -267,3 +267,49 @@ footer .style-liens{
     gap: 10px;
 }
 
+/*******tablette************/
+@media (min-width: 1024px) {
+    /*******navigation********/
+    nav .bouton-explorer {
+        width: 218px;     
+    }
+    /****restaurants****/
+    .restaurants{
+        display: flex;
+        flex-direction: row;
+    }
+    .restaurants .cards {
+    flex-direction: row;
+         }
+
+    .restaurants .cards .card { 
+        width: 45%;
+    }
+   
+    /***fonctionnement***/
+    .fonctionnement{
+        margin-bottom:0px;
+    }
+    .fonctionnement .guide {
+        flex-direction: row;    
+    }
+    /***footer***/
+    footer {
+        flex-direction: row;
+    }
+    footer .lien-footer {
+        flex-direction: row;
+    }
+   
+}
+/*********destock***********/
+@media (min-width: 1440px) {
+    .restaurants .cards {
+        flex-direction: row;
+    }
+    .restaurants{
+        flex-direction:row;
+    }
+    
+}
+
