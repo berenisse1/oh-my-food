@@ -41,3 +41,23 @@ header {
   
 }
 
+/****section-location******/
+.section-location{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+    color: #353535;
+    height: 50px;
+    gap: 10px;
+}
+       
+.section-location .location {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.section-location .fa-location-dot {
+    font-size: 18px;
+}
