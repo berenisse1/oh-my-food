@@ -55,12 +55,12 @@ header {
     gap: 10px;
 }
        
-.section-location .location {
+.section-location__location {
     font-size: 16px;
     font-weight: 500;
 }
 
-.section-location .fa-location-dot {
+.section-location__fa-location-dot {
     font-size: 18px;
 }
 
@@ -145,7 +145,7 @@ nav .bouton-explorer p {
     color: #fff; 
 }
 
-.guide .etapes  {
+.guide__etapes  {
     display: flex;
     justify-content: space-around;
     border: none ;
