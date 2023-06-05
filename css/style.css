@@ -55,12 +55,12 @@ header {
     gap: 10px;
 }
        
-.section-location__location {
+.section-location .location {
     font-size: 16px;
     font-weight: 500;
 }
 
-.section-location__fa-location-dot {
+.section-location .fa-location-dot {
     font-size: 18px;
 }
 
@@ -117,13 +117,13 @@ nav .bouton-explorer p {
 }
 
 
-.fonctionnement__title {
+.fonctionnement .title {
     display: flex;
     justify-content: flex-start;
     font-size: 24px;
 }
 
-.fonctionnement__guide {
+.fonctionnement .guide {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,7 +145,7 @@ nav .bouton-explorer p {
     color: #fff; 
 }
 
-.guide__etapes  {
+.guide .etapes  {
     display: flex;
     justify-content: space-around;
     border: none ;
