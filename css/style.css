@@ -283,16 +283,7 @@ nav .bouton-explorer p {
     opacity: 1;
     color: #9356DC;
 }
-/****animation pour définir couleur darière plan
-@keyframes showbackground {
-    from {
-        background-color: #353535;
-    }
-    to {
-        background-color: #9356DC;
-    }
-}
-*********************/
+
 /*******footer******/
 footer{
     display:flex ;
