@@ -247,7 +247,7 @@ nav .bouton-explorer p {
 }
 
 .restaurants .cards .card .card-content {
-display: flex;
+    display: flex;
 }
 
 .restaurants .cards .card .card-content .card-txt {
@@ -255,31 +255,40 @@ display: flex;
     padding: 0px;   
 }
 
-.restaurants .cards .card .card-content .card-like .fa-heart {   
-    background:linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-    font-size: 22px;
-    border-color: black;
-    opacity: 0em;
-    border: #353535 1 px solid;
-     
-}
-
-:hover .like-restaurant1, :hover .like-restaurant2{ 
-    background :linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-    font-size: 21px;
-    opacity: 1em;
-}
-
 .card-like {
-
-    font-size: 25px;
-    font-weight: unset;
+    font-size: 27px;
     position:relative;
-    color: black;
-    opacity: 0em;
+    color: #353535;
     left: 90%;
     bottom: 80px;
+}
 
+ .fa-heart {   
+    border: black 1 px solid;   
+}
+
+:hover .fa-heart{
+    color: transparent;
+}
+
+.neutral-heart {
+    position: relative;
+    right: 27px;
+    opacity: 0;
+}
+
+:hover .like-restaurant1, :hover .like-restaurant2, :hover .like-restaurant3, :hover .like-restaurant4 {
+    font-size: 21px;
+    opacity: 1;
+    background:linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    color: #9356DC;
+}
+
+:focus .like-restaurant1, :focus .like-restaurant2, :focus .like-restaurant3, :focus .like-restaurant4 {
+    font-size: 21px;
+    opacity: 1;
+    background:linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    color: #9356DC;
 }
 
 /*******footer******/
