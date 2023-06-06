@@ -248,11 +248,12 @@ nav .bouton-explorer p {
 
 .restaurants .cards .card .card-content {
     display: flex;
+    padding: 16px 60px 12px 13px;
 }
 
 .restaurants .cards .card .card-content .card-txt {
     margin: 0px;
-    padding: 0px;   
+    padding-top:5px;   
 }
 
 .card-like {
