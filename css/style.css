@@ -131,10 +131,25 @@ nav .bouton-explorer p {
 }
 
 .fonctionnement .guide .fa-solid {
-  padding-top: 15px;
-  padding-left: 15px;
+    position: relative;
+    top: 15px;
+    right: 12px;
     
 }
+
+.fonctionnement .guide .guide-content1{
+    display: flex;
+    position:relative;
+    right: 25px;
+
+}
+
+.guide-content2, .guide-content3{
+    display: flex;
+    position:relative;
+    right: 35px;
+}
+
 .fonctionnement .guide button {
     position: relative;
     width: 24px;
