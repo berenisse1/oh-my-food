@@ -12,10 +12,10 @@
     font-weight: 400;
 }
 
-.fa_heart {
+.like-menu {
     position: relative;
-    left: 80%;
-    top: 50%;
+    left: 500px;
+    top: 300px;
 }
 .carte {
     display: flex;
