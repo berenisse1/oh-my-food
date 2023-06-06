@@ -62,9 +62,8 @@
 
 .menu-like {
     display: flex;
-    position: relative;
     left: 90%;
-    top: 50px;
+    bottom: 50px;
     font-size: 27px;
     position:relative;
     color:#353535;
@@ -79,7 +78,7 @@
 .menu-content {
     padding-right: 15px ;
     padding: 12px;
-}
+} 
 .menu .menu-text{ 
 font-weight:300;
 font-size:15px;
