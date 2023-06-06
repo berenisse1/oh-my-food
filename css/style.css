@@ -264,7 +264,7 @@ nav .bouton-explorer p {
 }
 
  .fa-heart {   
-   border: black 1px solid ;   
+   opacity: 1;   
 }
 
 :hover .fa-heart{
