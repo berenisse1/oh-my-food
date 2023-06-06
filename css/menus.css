@@ -17,6 +17,13 @@
     left: 500px;
     top: 300px;
 }
+
+:focus .like-menu1, :focus .like-menu2, :focus .like-menu3, :focus .like-menu4 {
+    font-size: 21px;
+    opacity: 1;
+    color: #9356DC;
+}
+
 .carte {
     display: flex;
     flex-direction: column;
