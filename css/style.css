@@ -152,6 +152,8 @@ nav .bouton-explorer p {
 
 .fonctionnement .guide button {
     position: relative;
+    top: 10px;
+    right: 30px;
     width: 24px;
     height: 24px;
     border: none;
