@@ -273,8 +273,9 @@ display: flex;
 .card-like {
 
     font-size: 25px;
+    font-weight: unset;
     position:relative;
-    color: #008766;
+    color: black;
     opacity: 0em;
     left: 90%;
     bottom: 80px;
