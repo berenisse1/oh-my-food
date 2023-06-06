@@ -256,15 +256,29 @@ display: flex;
 }
 
 .restaurants .cards .card .card-content .card-like .fa-heart {   
-    background-color:linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background:linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     font-size: 22px;
-    position: absolute;
-    padding: 30px 20px 30px 170px;
+    border-color: black;
+    opacity: 0em;
+    border: #353535 1 px solid;
      
 }
 
-:hover.fa-heart { 
-    background-color:linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+:hover .like-restaurant1, :hover .like-restaurant2{ 
+    background :linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    font-size: 21px;
+    opacity: 1em;
+}
+
+.card-like {
+
+    font-size: 25px;
+    position:relative;
+    color: #008766;
+    opacity: 0em;
+    left: 90%;
+    bottom: 80px;
+
 }
 
 /*******footer******/
