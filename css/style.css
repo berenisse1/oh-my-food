@@ -38,9 +38,16 @@ header {
 .logo-cliquable {
     display: flex;
     justify-content: center;
-    padding-top: 14px;
-    padding-bottom: 5px;
+    padding: 15px 0px;
   
+}
+
+.retour {
+    font-size: 22px;
+    position:relative;
+    top: 15px;
+    left: 8px;
+
 }
 
 
@@ -101,7 +108,9 @@ nav .bouton-explorer {
     background-image:linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     box-shadow:0px 4px 15px 0px rgba(0, 0, 0, 0.15);  
     width: 218px;
-    padding-top: 27px;   
+    padding: 5px 1px;
+    margin-top: 27px;
+   
  
 }
 
@@ -317,6 +326,8 @@ footer .style-liens{
 
 /*******tablette************/
 @media (min-width: 1024px) {
+    /****header*************/
+   
     /*******navigation********/
     nav .bouton-explorer {
         width: 218px;     
