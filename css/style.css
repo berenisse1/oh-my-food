@@ -137,23 +137,22 @@ nav .bouton-explorer p {
     
 }
 
-.fonctionnement .guide .guide-content1{
+.n1 .guide-content{
     display: flex;
     position:relative;
     right: 25px;
 
 }
 
-.guide-content2, .guide-content3{
+.n2 .guide-content, .n3 .guide-content{
     display: flex;
     position:relative;
     right: 35px;
 }
 
-.fonctionnement .guide button {
+.n1 button, .n2 button , .n3 button{
     position: relative;
     top: 10px;
-    right: 30px;
     width: 24px;
     height: 24px;
     border: none;
@@ -161,6 +160,15 @@ nav .bouton-explorer p {
     border-radius: 20px;
     color: #fff; 
 }
+
+.n1 button{ 
+    right: 35px;
+}
+
+.n2 button , .n3 button {
+    right: 40px;
+}
+
 
 .guide .etapes  {
     display: flex;
