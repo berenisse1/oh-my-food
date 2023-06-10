@@ -99,8 +99,16 @@ margin: 0px;
 
 .bouton-check {
     position: relative;
-}
-
+    @keyframes slideright {
+        from {
+            margin-left: 0%;
+        }
+        to {
+            margin-left: 80%;
+        }
+    }
+  }
+  
 .bouton-commander{
     display: flex;
     justify-content: center;
