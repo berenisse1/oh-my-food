@@ -100,8 +100,11 @@ margin: 0px;
 .bouton-check {
     color: #fff;
     background-color: #99e2d0;
-    height: 2.1em;
-    font-size: x-large;
+    height: 69px;
+    width: 59px;
+    font-size: xx-large;
+    text-align: center;
+
     
     @keyframes slideright {
         from {
