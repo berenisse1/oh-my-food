@@ -292,7 +292,8 @@ nav .bouton-explorer p {
 :hover .like-restaurant1, :hover .like-restaurant2, :hover .like-restaurant3, :hover .like-restaurant4 {
     font-size: 21px;
     opacity: 1;
-    color: #9356DC;
+    background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    -webkit-text-stroke-color: initial;
 }
 
 /*******footer******/
