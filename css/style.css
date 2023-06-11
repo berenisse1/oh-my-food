@@ -269,9 +269,9 @@ nav .bouton-explorer p {
 
 .card-like {
     font-size: 27px;
-    position:relative;
+    position:absolute;
     color:#353535;
- 
+    left: 12em;
     bottom: 80px;
 }
 
