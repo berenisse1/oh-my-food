@@ -67,7 +67,7 @@
     left: 90%;
     bottom: 50px;
     font-size: 27px;
-    position:relative;
+    
     color:#353535;
 }
 
@@ -92,13 +92,13 @@ margin: 0px;
 
 .menu-prix{
     display: flex;
-    position: relative;
+
     bottom: 47px;
     left: 300px;
 }
 
 .bouton-check {
-    position: relative;
+    
     @keyframes slideright {
         from {
             margin-left: 0%;
@@ -108,7 +108,7 @@ margin: 0px;
         }
     }
   }
-  
+
 .bouton-commander{
     display: flex;
     justify-content: center;
