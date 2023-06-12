@@ -359,11 +359,22 @@ footer .style-liens{
     /***footer***/
     footer {
         flex-direction: row;
+        justify-content: flex-end;
+        height: 114px;
+        
     }
     footer .lien-footer {
+        align-items: last baseline;
         flex-direction: row;
+        margin: 2em 20em;
+      
     }
-   
+    .logo-footer{
+        position: absolute ;
+        right: 5em;
+        padding: 2.5em 0em;
+
+    }
 }
 /*********destock***********/
 @media (min-width: 1440px) {
