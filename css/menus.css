@@ -22,15 +22,19 @@
     position: relative;
     background-color:#f7f7f7;
     background-image: initial;
-    border-radius: 24px;
+    border-radius: 24px 24px;
     width: 100%;
     box-sizing: border-box;
     bottom:50px;
     padding: 10px;
+ 
+
 }
 
 .menus {
-    max-width: fit-content;
+    max width: 1440px;
+ 
+
 
 }
  .menu {
@@ -38,7 +42,7 @@
     justify-content: stretch;
     border: none ;
     border-radius: 20px;
-    width: 93%;
+    width: 80%;
     height:69px;
     background-color: white; 
     margin:0px;
@@ -144,4 +148,13 @@ margin: 0px;
     font-size: 16px;
     font-weight: 500;
     color: #fff;
+}
+
+
+/*******tablette************/
+@media (min-width: 1024px) {
+.carte {
+    margin: 0px 50px;
+    width: 65%;
+}
 }
