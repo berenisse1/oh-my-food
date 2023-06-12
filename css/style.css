@@ -31,9 +31,7 @@ body {
 
 /*******header*********/
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+   
 }
 .logo-cliquable {
     display: flex;
@@ -55,7 +53,7 @@ header {
 
 .section-location{
     display: flex;
-    flex-direction: row;
+
     justify-content: center;
     align-items: center;
     background-color: #eaeaea;
@@ -85,26 +83,23 @@ header {
     padding-top: 15px;
   
 }
-.navigation .reservation h2 {
-    display: flex;
-    justify-content: center;
+.navigation .reservation  {
+  
     font-weight: 700;
     font-size: 24px
 }
 
-.navigation .selection p {
-    display: flex;
-    justify-content: center;
+.navigation .selection {
+ 
     font-weight: 300;
     font-size: 18px
 }
 
 .navigation .bouton-explorer {
-    display: flex;
-    justify-content: center;
+    
     border-radius: 60px;
     box-sizing: border-box;
-    border:none solid 1px;
+    border:none;
     background-image:linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     box-shadow:0px 4px 15px 0px rgba(0, 0, 0, 0.15);  
     width: 218px;
@@ -122,15 +117,13 @@ header {
 
 /******fonctionnement*****/
 .fonctionnement {
-    display: flex;
-    flex-direction: column;
+
     margin-bottom: 30%;
 }
 
 
 .fonctionnement .title {
-    display: flex;
-    justify-content: flex-start;
+
     font-size: 24px;
 }
 
@@ -193,13 +186,9 @@ header {
 }
 
 /*****restaurants*****/
-.lien-menu{
-    width:100%;
-   
-}
+
 .restaurants {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
     margin-top: 35px;
@@ -208,21 +197,14 @@ header {
 }
 
 .restaurants .restaurants-title { 
-    display: flex;   
    margin-bottom: 0px;
 }
 .restaurants .cards {
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-    flex-wrap: wrap;
     width: 100%;
-    align-items:center;
+    padding: 15px;
+ 
 }   
 .restaurants .cards .card {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
     margin-top: 30px; 
     margin-bottom: 7px;
     height: auto;
@@ -231,6 +213,11 @@ header {
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     border: none;
+}
+
+.lien-menu{
+ 
+   
 }
 
 .restaurants .cards .card .cardImage{
@@ -246,8 +233,6 @@ header {
 }
 
 .restaurants .cards .card .badgeNew {
-    display: flex;
-    justify-content: center;
     position:absolute;
     background:#99E2D0;
     border: none;
@@ -258,12 +243,10 @@ header {
 }
 
 .restaurants .cards .card .card-content {
-    display: flex;
     padding: 16px 60px 12px 13px;
 }
 
 .restaurants .cards .card .card-content .card-txt {
-    margin: 0px;
     padding-top:5px;   
 }
 
@@ -275,24 +258,30 @@ header {
     bottom: 80px;
 }
 
- .solid-heart {   
-   opacity: 1;   
+ .solid-heart { 
+    position: relative;
+    bottom: -31px;
+    right: 27px;
+    opacity: 1;
+   
 }
 
-:active .solid-heart{
-    color: transparent;
+:active .solid-heart {
+    color:transparent;
 }
 
 .neutral-heart {
     position: relative;
     right: 27px;
     opacity: 0;
+  
+    
 }
 
 .like-restaurant1:hover , .like-restaurant2:hover, .like-restaurant3:hover, .like-restaurant4:hover {
     font-size: 21px;
-    opacity: 1;
     color:#9356DC ;
+    opacity: 1;
     transition-property: color;
     transition-duration: 1s;
 }
@@ -340,13 +329,26 @@ footer .style-liens{
         flex-direction: row;
     }
     .restaurants .cards {
-    flex-direction: row;
-         }
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+         
+    }
 
     .restaurants .cards .card { 
         width: 45%;
     }
-   
+    .solid-heart { 
+        position:none;
+        opacity: 1;
+       
+    }
+    .neutral-heart {
+        right: 55px;   
+        top: 32px;
+    }
+
     /***fonctionnement***/
     .fonctionnement{
         margin-bottom:0px;
@@ -366,7 +368,7 @@ footer .style-liens{
 /*********destock***********/
 @media (min-width: 1440px) {
     .restaurants .cards {
-        flex-direction: row;
+      
     }
     .restaurants{
         flex-direction:row;
