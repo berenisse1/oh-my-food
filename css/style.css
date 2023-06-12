@@ -279,7 +279,7 @@ header {
    opacity: 1;   
 }
 
-:hover .solid-heart{
+:active .solid-heart{
     color: transparent;
 }
 
@@ -289,12 +289,12 @@ header {
     opacity: 0;
 }
 
-:hover .like-restaurant1, :hover .like-restaurant2, :hover .like-restaurant3, :hover .like-restaurant4 {
+.like-restaurant1:hover , .like-restaurant2:hover, .like-restaurant3:hover, .like-restaurant4:hover {
     font-size: 21px;
     opacity: 1;
-    background:#9356DC;
-    transition-property: background-color;
-    transition-duration: 5s;
+    color:#9356DC ;
+    transition-property: color;
+    transition-duration: 1s;
 }
 
 /*******footer******/
