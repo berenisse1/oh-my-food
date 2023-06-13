@@ -34,7 +34,7 @@ body {
 .logo-cliquable {
     display: flex;
     justify-content: center;
-    padding: 15px 0px; 
+    padding-bottom:10px; 
 }
 
 .retour {
@@ -105,7 +105,7 @@ body {
 
 /******fonctionnement*****/
 .fonctionnement{ 
-    margin-bottom: 30%;
+    margin-bottom: 20%;
 }
 
 .fonctionnement .title {
@@ -181,11 +181,11 @@ body {
 }
 
 .restaurants .restaurants-title { 
-   margin-bottom: 0px;
+   margin: 40px 0px 0px 20px;
 }
 .restaurants .cards {
     width: 100%;
-    padding: 15px;
+    padding: 0px 15px;
  
 }   
 .restaurants .cards .card {
@@ -333,7 +333,7 @@ footer .style-liens{
     .fonctionnement .guide {
         flex-direction: row;    
     }
-    
+
     /***footer***/
     footer {
         display: flex;
