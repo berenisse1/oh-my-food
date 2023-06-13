@@ -200,10 +200,6 @@ body {
     border: none;
 }
 
-.lien-menu{
-   
-}
-
 .restaurants .cards .card .cardImage{
     height: 190px; 
     border: none;
@@ -366,9 +362,6 @@ footer .style-liens{
 }
 /*********destock***********/
 @media (min-width: 1440px) {
-    .restaurants .cards {
-      
-    }
 
     footer .lien-footer {
         flex-direction: row;
