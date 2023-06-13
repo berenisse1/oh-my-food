@@ -317,14 +317,15 @@ footer .style-liens{
     .restaurants .cards .card { 
         width: 45%;
     }
-    .empty-heart { 
-        bottom: -31px;
-        right: 27px;
 
+    .empty-heart { 
+        bottom: -3px;
+        left: 260px;
     }
     
     .full-heart {
-        right: 27px;
+        left: 233px;
+        top: 3px;
         opacity: 0;
     }
     /***fonctionnement***/
