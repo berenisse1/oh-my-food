@@ -157,7 +157,6 @@ body {
     right: 40px;
 }
 
-
 .guide .etapes  {
     display: flex;
     justify-content: space-around;
@@ -170,7 +169,6 @@ body {
 }
 
 /*****restaurants*****/
-
 .restaurants {
     display: flex;
     flex-wrap: wrap;
@@ -187,8 +185,8 @@ body {
 .restaurants .cards {
     width: 100%;
     padding: 0px 15px;
- 
-}   
+}  
+
 .restaurants .cards .card {
     margin-top: 30px; 
     margin-bottom: 7px;
@@ -238,12 +236,11 @@ body {
     bottom: 80px;
 }
 
- .empty-heart { 
+.empty-heart { 
     position: relative;
     bottom: -31px;
     right: 27px;
     opacity: 1;
-   
 }
 
 :active .empty-heart {
@@ -254,7 +251,6 @@ body {
     position: relative;
     right: 27px;
     opacity: 0;
-
 }
 
 .like-restaurant1:hover , .like-restaurant2:hover, .like-restaurant3:hover, .like-restaurant4:hover {
