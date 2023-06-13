@@ -30,30 +30,23 @@ body {
 }
 
 /*******header*********/
-header {
-   
-}
+
 .logo-cliquable {
     display: flex;
     justify-content: center;
-    padding: 15px 0px;
-  
+    padding: 15px 0px; 
 }
 
 .retour {
     font-size: 22px;
-    
     top: 15px;
     left: 8px;
-
 }
-
 
 /****section-location******/
 
 .section-location{
     display: flex;
-
     justify-content: center;
     align-items: center;
     background-color: #eaeaea;
@@ -72,7 +65,6 @@ header {
 }
 
 /*******navigation********/
-
 .navigation{
     display:flex;
     flex-direction:column;
@@ -80,23 +72,20 @@ header {
     align-items: center;
     background-color: #f7f7f7;
     padding-bottom:50px;
-    padding-top: 15px;
-  
+    padding-top: 15px; 
 }
+
 .navigation .reservation  {
-  
     font-weight: 700;
     font-size: 24px
 }
 
 .navigation .selection {
- 
     font-weight: 300;
     font-size: 18px
 }
 
 .navigation .bouton-explorer {
-    
     border-radius: 60px;
     box-sizing: border-box;
     border:none;
@@ -105,8 +94,7 @@ header {
     width: 218px;
     padding: 5px 1px;
     margin-top: 27px;
-   
- 
+
 }
 
 .navigation .bouton-explorer p {
@@ -116,14 +104,11 @@ header {
 }
 
 /******fonctionnement*****/
-.fonctionnement {
-
+.fonctionnement{ 
     margin-bottom: 30%;
 }
 
-
 .fonctionnement .title {
-
     font-size: 24px;
 }
 
@@ -137,8 +122,7 @@ header {
 .fonctionnement .guide .fa-solid {
     position: relative;
     top: 15px;
-    right: 12px;
-    
+    right: 12px;   
 }
 
 .n1 .guide-content{
@@ -216,7 +200,6 @@ header {
 }
 
 .lien-menu{
- 
    
 }
 
@@ -274,8 +257,7 @@ header {
     position: relative;
     right: 27px;
     opacity: 0;
-  
-    
+
 }
 
 .like-restaurant1:hover , .like-restaurant2:hover, .like-restaurant3:hover, .like-restaurant4:hover {
@@ -293,9 +275,9 @@ footer{
 }
 
 footer .logo-footer{
-
     -webkit-filter: invert(100%);
 }
+
 footer .lien-footer {
     display: flex;
     flex-direction: column;
@@ -311,9 +293,9 @@ footer .style-liens{
     gap: 10px;
 }
 
-/*******tablette************/
+/***********tablette****************/
+
 @media (min-width: 1024px) {
-    /****header*************/
    
     /*******navigation********/
     nav .bouton-explorer {
@@ -351,6 +333,7 @@ footer .style-liens{
     .fonctionnement .guide {
         flex-direction: row;    
     }
+    
     /***footer***/
     footer {
         display: flex;
