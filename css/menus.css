@@ -3,7 +3,6 @@
 
 /*******header-menu*******/
 .menu-restaurant-image{
-    display: flex;
     width: 100%;
     height: 275px;
     object-fit: cover;  
@@ -11,43 +10,66 @@
 
 /******carte********/
 
-.Restaurant-title {
-    font-family: 'Shrikhand', cursive;
-    font-weight: 400;
-}
-
 .carte {
-    display: flex;
-    flex-direction: column;
     position: relative;
     background-color:#f7f7f7;
     background-image: initial;
     border-radius: 24px 24px;
     width: 100%;
     box-sizing: border-box;
-    bottom:50px;
     padding: 10px;
  
+}
 
+.Restaurant-title {
+    font-family: 'Shrikhand', cursive;
+    font-weight: 400;
+}
+
+.menu-like {
+    position: absolute;
+    left: 75%;
+    top: 2.5%;
+    font-size: 27px;
+    color:#353535;
+}
+
+:active .heart-menu {
+    color:transparent;
+}
+
+.neutral-heart {
+    position: relative;
+    right: px;
+    opacity: 0;   
+}
+
+.like-menu1:hover , .like-menu2:hover, .like-menu3:hover, .like-menu4:hover {
+    font-size: 21px;
+    color:#9356DC ;
+    opacity: 1;
+    transition-property: color;
+    transition-duration: 1s;
+}
+
+:focus .like-menu1, :focus .like-menu2, :focus .like-menu3, :focus .like-menu4 {
+    font-size: 21px;
+    opacity: 1;
+    color: #9356DC;
 }
 
 .menus {
     max-width: 1440px;
- 
-
-
 }
- .menu {
+
+.menu {
     display: flex;
-    justify-content: stretch;
-    border: none ;
     border-radius: 20px;
     width: 80%;
     height:69px;
     background-color: white; 
-    margin:0px;
-
-    box-shadow:0px 4px 15px 0px rgba(0, 0, 0, 0.15);   
+    box-shadow:0px 4px 15px 0px rgba(0, 0, 0, 0.15); 
+    overflow: hidden;
 }
 
 .list-menu{
@@ -59,36 +81,16 @@
     font-weight: 300;
     font-size: 16px;
     text-decoration: underline;
-    text-decoration-color: #99e2d0;
-   
+    text-decoration-color: #99e2d0; 
 }
 
 .menu .menu-title {
     font-weight: 500;
     font-size: 18px;
-    padding: 0px;
     margin: 0px;
 } 
 
-.menu-like {
-    display: flex;
-    left: 90%;
-    bottom: 50px;
-    font-size: 27px;
-    
-    color:#353535;
-}
-
-
-
-:focus .like-menu1, :focus .like-menu2, :focus .like-menu3, :focus .like-menu4 {
-    font-size: 21px;
-    opacity: 1;
-    color: #9356DC;
-}
-
 .menu-content {
-    padding-right: 15px ;
     padding: 12px;
 } 
 .menu .menu-text{ 
@@ -99,34 +101,51 @@ margin: 0px;
 }
 
 .menu-prix{
-    display: flex;
+ position: absolute;
+ left: 69%;   
 
-    bottom: 47px;
-    left: 300px;
 }
 
 .bouton-check {
-    color: #fff;
-    background-color: #99e2d0;
+    
     height: 69px;
     width: 59px;
     font-size: xx-large;
     text-align: center;
     border-radius: 0px 20px 20px 0px;
     position: absolute;
-    left: 78%;
+    left: 79%;
     text-align: center;
-
-    
-    @keyframes slideright {
-        from {
-            margin-left: 0%;
-        }
-        to {
-            margin-left: 80%;
-        }
-    }
+    color: transparent;
   }
+
+.menu:hover,:active {
+    .bouton-check {
+    color: #fff;
+    background-color: #99e2d0;
+    animation-duration: 1s;
+    animation-name: slideright;
+    animation-direction: alternate;
+  }
+  .menu-prix{
+    animation-duration: 1s;
+    animation-name: slideright;
+    animation-direction: alternate;
+
+  }
+
+
+}
+
+@keyframes slideright {
+          from {
+              margin-left: 0px;
+          }
+          to {
+              margin-left: -59px;
+          }
+}
+
 
 .bouton-commander{
     display: flex;
@@ -139,6 +158,7 @@ margin: 0px;
     width: 218px;
     padding: 3px 1px; 
     margin: 50px;
+    line-height: 2em;
 } 
 .commander{
     display: flex;
@@ -150,11 +170,30 @@ margin: 0px;
     color: #fff;
 }
 
-
 /*******tablette************/
 @media (min-width: 1024px) {
-.carte {
+    .carte {
     margin: 0px 50px 0px 50px;
     width: 65%;
 }
+
+.neutral-heart {
+    right: 27px;
+    top: 1px;
 }
+.menu {
+    width: 60%; 
+}
+
+.menu-prix {
+    left: 50%;
+}
+.bouton-check {
+    left: 59%; 
+}
+
+}
+
+
+
+/****desktop*****/

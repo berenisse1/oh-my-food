@@ -288,21 +288,18 @@ header {
 
 /*******footer******/
 footer{
-    display:flex ;
     background-color: #353535;
     padding: 30px ; 
 }
 
 footer .logo-footer{
-    filter: invert(100%);
+
     -webkit-filter: invert(100%);
 }
 footer .lien-footer {
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
     list-style: none;
-    justify-content: space-between;
     font-size: 16px;
     padding: 0px 20px 20px 0px;  
     gap: 7px;    
@@ -310,7 +307,6 @@ footer .lien-footer {
 
 footer .style-liens{
     display: flex;
-    align-items: stretch;
     color: #fff;
     gap: 10px;
 }
@@ -332,8 +328,7 @@ footer .style-liens{
         justify-content: space-between;
         display: flex;
         flex-wrap: wrap;
-        align-items:center;
-         
+        align-items:center;    
     }
 
     .restaurants .cards .card { 
@@ -358,31 +353,36 @@ footer .style-liens{
     }
     /***footer***/
     footer {
-        flex-direction: row;
+        display: flex;
         justify-content: flex-end;
-        height: 114px;
-        
+        height: 114px;   
     }
-    footer .lien-footer {
-        align-items: last baseline;
-        flex-direction: row;
-        margin: 2em 20em;
-      
-    }
-    .logo-footer{
+    .logo-footer {
         position: absolute ;
-        right: 5em;
-        padding: 2.5em 0em;
-
+        right: 2em;
+        padding: 1.7em 0em;
     }
+    .footer .lien-footer{
+        display: flex;
+        flex-direction: row;
+        margin: 2em 13em;
+    }
+    
 }
 /*********destock***********/
 @media (min-width: 1440px) {
     .restaurants .cards {
       
     }
-    .restaurants{
-        flex-direction:row;
+
+    footer .lien-footer {
+        flex-direction: row;
+        margin: 2em 20em;  
+    }
+    .logo-footer{
+        right: 5em;
+        padding: 2.5em 0em;
+
     }
     
 }
