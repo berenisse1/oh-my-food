@@ -183,6 +183,7 @@ body {
 .restaurants .restaurants-title { 
    margin: 40px 0px 0px 20px;
 }
+
 .restaurants .cards {
     width: 100%;
     padding: 0px 15px;
@@ -241,7 +242,7 @@ body {
     bottom: 80px;
 }
 
- .solid-heart { 
+ .empty-heart { 
     position: relative;
     bottom: -31px;
     right: 27px;
@@ -249,11 +250,11 @@ body {
    
 }
 
-:active .solid-heart {
+:active .empty-heart {
     color:transparent;
 }
 
-.neutral-heart {
+.full-heart {
     position: relative;
     right: 27px;
     opacity: 0;
@@ -316,16 +317,16 @@ footer .style-liens{
     .restaurants .cards .card { 
         width: 45%;
     }
-    .solid-heart { 
-        position:none;
-        opacity: 1;
-       
-    }
-    .neutral-heart {
-        right: 55px;   
-        top: 32px;
-    }
+    .empty-heart { 
+        bottom: -31px;
+        right: 27px;
 
+    }
+    
+    .full-heart {
+        right: 27px;
+        opacity: 0;
+    }
     /***fonctionnement***/
     .fonctionnement{
         margin-bottom:0px;
