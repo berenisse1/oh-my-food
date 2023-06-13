@@ -308,7 +308,7 @@ footer .style-liens{
         flex-direction: row;
     }
     .restaurants .cards {
-        justify-content: space-between;
+        justify-content: space-around;
         display: flex;
         flex-wrap: wrap;
         align-items:center;    
@@ -317,6 +317,10 @@ footer .style-liens{
     .restaurants .cards .card { 
         width: 45%;
     }
+
+    .restaurants .restaurants-title { 
+        margin-left: 52px;
+     }
 
     .empty-heart { 
         bottom: -3px;
@@ -330,10 +334,15 @@ footer .style-liens{
     }
     /***fonctionnement***/
     .fonctionnement{
-        margin-bottom:0px;
+        margin:50px 0px 50px 200px;
     }
     .fonctionnement .guide {
-        flex-direction: row;    
+        flex-direction: row;
+        gap:40px     
+    }
+
+    .guide .etapes {
+        width: 25%;
     }
 
     /***footer***/
@@ -342,6 +351,7 @@ footer .style-liens{
         justify-content: flex-end;
         height: 114px;   
     }
+
     .logo-footer {
         position: absolute ;
         right: 2em;
