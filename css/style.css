@@ -28,6 +28,8 @@ body {
     text-decoration: none;
     color: black;
 }
+ /**********loder*******/
+      
 
 /*******header*********/
 
@@ -106,6 +108,7 @@ body {
 /******fonctionnement*****/
 .fonctionnement{ 
     margin-bottom: 20%;
+    margin-left: 20px;
 }
 
 .fonctionnement .title {
