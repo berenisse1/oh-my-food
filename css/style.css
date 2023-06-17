@@ -29,7 +29,6 @@ body {
     color: black;
 }
  /**********loder*******/
-      
 
 /*******header*********/
 
@@ -107,8 +106,8 @@ body {
 
 /******fonctionnement*****/
 .fonctionnement{ 
-    margin-bottom: 20%;
-    margin-left: 20px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .fonctionnement .title {
@@ -130,7 +129,6 @@ body {
 
 .n1 .guide-content{
     display: flex;
-    position:relative;
     right: 25px;
 
 }
@@ -142,8 +140,8 @@ body {
 }
 
 .n1 button, .n2 button , .n3 button{
-    position: relative;
-    top: 10px;
+    position: absolute;
+    
     width: 24px;
     height: 24px;
     border: none;
@@ -329,7 +327,7 @@ footer .style-liens{
     }
     /***fonctionnement***/
     .fonctionnement{
-        margin:50px 0px 50px 200px;
+       
     }
     .fonctionnement .guide {
         flex-direction: row;
@@ -337,7 +335,7 @@ footer .style-liens{
     }
 
     .guide .etapes {
-        width: 25%;
+        width: 33%;
     }
 
     /***footer***/
