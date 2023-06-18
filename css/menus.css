@@ -1,4 +1,8 @@
-
+/***header-menu**/
+.header-menu{
+    margin: 0 auto;
+    padding: 20px;
+}
 /*******bannière*******/
 .menu-restaurant-image{
     width: 100%;

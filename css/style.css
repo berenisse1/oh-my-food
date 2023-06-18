@@ -33,15 +33,19 @@ body {
 /*******header*********/
 
 .logo-cliquable {
-    display: flex;
-    justify-content: center;
-    padding-bottom:10px; 
+   
 }
 
 .retour {
-    font-size: 22px;
-    top: 15px;
-    left: 8px;
+ 
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    position: relative;
 }
 
 /****section-location******/
@@ -123,14 +127,16 @@ body {
 }
 
 .fonctionnement .guide .fa-solid {
-    position: relative;
-    top: 15px;
-    right: 12px;   
+    position: absolute;
+    top: 25px;
+    left: 30px;   
 }
 
 .n1 .guide-content{
-    display: flex;
-  
+    
+}
+
+.guide-content p {
 
 }
 
@@ -177,9 +183,6 @@ body {
 
 /*****restaurants*****/
 .restaurants {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
     margin-top: 35px;
     background-color: #f7f7f7; 
     margin-bottom: 50px; 
@@ -187,12 +190,12 @@ body {
 }
 
 .restaurants .restaurants-title { 
-   margin: 40px 0px 0px 20px;
+  
+   margin-left: 35px;
+   padding-top: 30px;
 }
 
 .restaurants .cards {
-    width: 100%;
-  
     max-width: 1440px;
     margin: 0px 16px;
     
@@ -227,7 +230,7 @@ body {
     border: none;
     color: #008766;
     font-size: 14px;
-    margin: 2% 1% 80% 75% ;
+    right: 20px;
     padding: 7px 9px;
 }
 
@@ -258,8 +261,8 @@ body {
 
 .empty-heart { 
     position: absolute;
-    bottom: 70px;
     right: 27px;
+    bottom: 50px;
     opacity: 1;
 }
 
@@ -270,7 +273,7 @@ body {
 .full-heart {
     position: absolute;
     right: 27px;
-    bottom: 70px;
+    bottom: 50px;
     opacity: 0;
 }
 
@@ -318,6 +321,7 @@ footer .style-liens{
     }
     /****restaurants****/
     .restaurants{
+        padding: 0px 100px;
         
     }
     .restaurants .cards {
@@ -347,7 +351,7 @@ footer .style-liens{
     /***fonctionnement***/
 
     .fonctionnement{
-        padding: 20px 100px;
+        padding: 20px 150px;
     }
     .fonctionnement .title{
       padding: 0px;
