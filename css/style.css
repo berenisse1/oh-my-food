@@ -112,6 +112,7 @@ body {
 
 .fonctionnement .title {
     font-size: 24px;
+    margin: 48px 20px 26px;
 }
 
 .fonctionnement .guide {
@@ -129,25 +130,29 @@ body {
 
 .n1 .guide-content{
     display: flex;
-    right: 25px;
+  
 
 }
 
 .n2 .guide-content, .n3 .guide-content{
     display: flex;
-    position:relative;
-    right: 35px;
+ 
 }
 
 .n1 button, .n2 button , .n3 button{
-    position: absolute;
-    
     width: 24px;
     height: 24px;
     border: none;
     background-color: #9356DC;
     border-radius: 20px;
     color: #fff; 
+    position: absolute;
+    left: -10px;
+}
+
+.fa-fw{
+    text-align: center;
+    width: 1.25em;
 }
 
 .n1 button{ 
@@ -166,7 +171,8 @@ body {
     width: 80%;
     padding: 10px 5px;
     box-shadow:0px 4px 15px 0px rgba(0, 0, 0, 0.15); 
-    background-color:#ffffff;    
+    background-color:#ffffff;  
+    position: relative;  
 }
 
 /*****restaurants*****/
@@ -269,6 +275,7 @@ footer{
 }
 
 footer .logo-footer{
+    -filter: ;
     -webkit-filter: invert(100%);
 }
 

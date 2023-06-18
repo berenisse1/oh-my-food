@@ -56,6 +56,7 @@
     left: 270px;
     font-size: 24px;
     background: linear-gradient(rgb(135, 72, 209), rgb(232, 102, 196));
+    background-clip:content-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
