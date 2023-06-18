@@ -112,7 +112,7 @@ body {
 
 .fonctionnement .title {
     font-size: 24px;
-    margin: 48px 20px 26px;
+    padding: 30px 25px 0px;
 }
 
 .fonctionnement .guide {
@@ -183,6 +183,7 @@ body {
     margin-top: 35px;
     background-color: #f7f7f7; 
     margin-bottom: 50px; 
+    
 }
 
 .restaurants .restaurants-title { 
@@ -191,7 +192,10 @@ body {
 
 .restaurants .cards {
     width: 100%;
-    padding: 0px 15px;
+  
+    max-width: 1440px;
+    margin: 0px 16px;
+    
 }  
 
 .restaurants .cards .card {
@@ -235,17 +239,26 @@ body {
     padding-top:5px;   
 }
 
+.card-content .card-title{
+    margin: 0px;
+   
+}
+.card-content .card-subtitle{
+    font-weight: 300;
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom:10px;
+}
+
 .card-like {
     font-size: 27px;
-    position:absolute;
     color:#353535;
-    left: 12em;
-    bottom: 80px;
+  
 }
 
 .empty-heart { 
-    position: relative;
-    bottom: -31px;
+    position: absolute;
+    bottom: 70px;
     right: 27px;
     opacity: 1;
 }
@@ -255,8 +268,9 @@ body {
 }
 
 .full-heart {
-    position: relative;
+    position: absolute;
     right: 27px;
+    bottom: 70px;
     opacity: 0;
 }
 
@@ -304,14 +318,14 @@ footer .style-liens{
     }
     /****restaurants****/
     .restaurants{
-        display: flex;
-        flex-direction: row;
+        
     }
     .restaurants .cards {
         justify-content: space-around;
         display: flex;
         flex-wrap: wrap;
-        align-items:center;    
+        margin: auto;
+       
     }
 
     .restaurants .cards .card { 
@@ -323,17 +337,20 @@ footer .style-liens{
      }
 
     .empty-heart { 
-        bottom: -3px;
-        left: 260px;
+        
     }
     
     .full-heart {
-        left: 233px;
-        top: 3px;
+       
         opacity: 0;
     }
     /***fonctionnement***/
+
     .fonctionnement{
+        padding: 20px 100px;
+    }
+    .fonctionnement .title{
+      padding: 0px;
        
     }
     .fonctionnement .guide {
