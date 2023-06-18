@@ -1,7 +1,13 @@
 /***header-menu**/
 .header-menu{
     margin: 0 auto;
-    padding: 20px;
+   
+}
+
+.retour  {
+    position: absolute;
+    left: -80px;
+    font-size: 22px;
 }
 /*******bannière*******/
 .menu-restaurant-image{
