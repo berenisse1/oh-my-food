@@ -1,6 +1,7 @@
 /********général********/
 * {
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 html {
@@ -14,9 +15,12 @@ body {
     justify-content: center;
     margin: 0px;
     padding: 0px;
-    border: 0px;
-    border: box;
+    border: 0;
+    
+ 
+  
 }
+
 .main-container {
     width: 100%;
     box-sizing: border-box;
@@ -30,17 +34,34 @@ body {
     color: black;
 }
  /**********loder*******/
- .loader {
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #3498db;
-    width: 120px;
-    height: 120px;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-  }
+ .loding{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeout 0.2s linear;
+    animation-delay: 2.5s;
+    animation-fill-mode: both;
+    width: 99vw;
+    height: 100vh;
+    animation: fadeout 0.2s 3s forwards;
+    
   
-  @-webkit-keyframes spin {
+ }
+
+.loader {
+border: 10px solid #f3f3f3;
+border-radius: 50%;
+border-top: 10px solid #9356DC;
+width: 120px;
+height: 120px;
+animation: spin 1s linear infinite;
+position: absolute;
+animation-fill-mode: backwards;
+animation-delay: 1s;
+    
+}
+
+@-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
   }
@@ -49,7 +70,7 @@ body {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
-
+  
 
 /*******header*********/
 
