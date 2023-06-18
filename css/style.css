@@ -15,6 +15,7 @@ body {
     margin: 0px;
     padding: 0px;
     border: 0px;
+    border: box;
 }
 .main-container {
     width: 100%;
@@ -30,39 +31,65 @@ body {
 }
  /**********loder*******/
  .loding {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
  }
- .loader {
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #3498db;
-    width: 120px;
-    height: 120px;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
+
+.center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.wave {
+  width: 5px;
+  height: 100px;
+  background: linear-gradient(45deg, cyan, #fff);
+  margin: 10px;
+  animation: wave 1s linear infinite;
+  border-radius: 20px;
+}
+.wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.wave:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
   }
-  
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
+  50% {
+    transform: scale(1);
   }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+  100% {
+    transform: scale(0);
   }
+}
 
 /*******header*********/
-
-.logo-cliquable {
-   
-}
-
-.retour {
- 
-}
 
 header{
     display: flex;
@@ -154,19 +181,6 @@ header{
     position: absolute;
     top: 25px;
     left: 30px;   
-}
-
-.n1 .guide-content{
-    
-}
-
-.guide-content p {
-
-}
-
-.n2 .guide-content, .n3 .guide-content{
-   
- 
 }
 
 .n1 button, .n2 button , .n3 button{
@@ -320,7 +334,6 @@ footer{
 }
 
 footer .logo-footer{
-    -filter: ;
     -webkit-filter: invert(100%);
 }
 
@@ -367,14 +380,10 @@ footer .style-liens{
     .restaurants .restaurants-title { 
         margin-left: 52px;
      }
-
-    .empty-heart { 
-        
-    }
     
     .full-heart {
        
-        opacity: 0;
+     opacity: 0;
     }
     /***fonctionnement***/
 
