@@ -61,7 +61,7 @@
 }
 
 :active .empty-heart-menu {
-    color:transparent;
+    color:;
 }
 
 .full-heart-menu {
@@ -71,9 +71,10 @@
     bottom: 38px;
     left: 0px;
     font-size: 24px;
-    background: linear-gradient(rgb(135, 72, 209), rgb(232, 102, 196));
-    background-clip:content-box;
+
+ background: linear-gradient(rgb(135, 72, 209), rgb(232, 102, 196));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     
 }
@@ -82,7 +83,9 @@
     opacity: 1;
     background: linear-gradient(rgb(135, 72, 209), rgb(232, 102, 196));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+
  
     transition-property: color;
     transition-duration: 1s;
@@ -91,11 +94,8 @@
 :focus .like-menu1, :focus .like-menu2, :focus .like-menu3, :focus .like-menu4 {
     font-size: 21px;
     opacity: 1;
-   
-    background: linear-gradient(rgb(135, 72, 209), rgb(232, 102, 196));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+ }  
+
 
 .menus {
     max-width: 1440px;
