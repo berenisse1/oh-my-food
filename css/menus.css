@@ -29,6 +29,12 @@
     
  
 }
+.span-like {
+   position: relative;
+
+}
+
+
 
 .title-like{
     gap: 10px;
@@ -42,15 +48,15 @@
 }
 
 .menu-like{
-    position: absolute; 
+ 
     font-size: 27px;
     color:#353535;
 }
 
 .empty-heart-menu {
-    position: relative;
-    bottom: 52px;
+    position: absolute;
     left:300px;
+    bottom: 38px;
     opacity: 1;
 }
 
@@ -59,11 +65,11 @@
 }
 
 .full-heart-menu {
-    position: relative;
-    right: 0px;
+    position: absolute;
+    left: 300px;
     opacity: 0;  
-    bottom: 52px;
-    left: 270px;
+    bottom: 38px;
+    left: 0px;
     font-size: 24px;
     background: linear-gradient(rgb(135, 72, 209), rgb(232, 102, 196));
     background-clip:content-box;
@@ -74,6 +80,9 @@
 
 .like-menu1:hover , .like-menu2:hover, .like-menu3:hover, .like-menu4:hover {
     opacity: 1;
+    background: linear-gradient(rgb(135, 72, 209), rgb(232, 102, 196));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
  
     transition-property: color;
     transition-duration: 1s;
@@ -236,11 +245,11 @@ margin: 0px;
 
 .empty-heart-menu {
 
-    left: 330px; 
+    left: 350px; 
 }
 
 .full-heart-menu {
-    left: 300px;
+    left: 350px;
 }
 
 }
@@ -249,7 +258,7 @@ margin: 0px;
 @media(min-width:1440px) {
     .empty-heart-menu {
 
-        left: 500px; 
+        left: 470px; 
     }
     
     .full-heart-menu {
