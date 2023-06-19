@@ -353,6 +353,7 @@ header{
     right: 27px;
     bottom: 50px;
     opacity: 1;
+   
 }
 
 :active .empty-heart {
@@ -364,15 +365,31 @@ header{
     right: 27px;
     bottom: 50px;
     opacity: 0;
-}
+    color: transparent;
+ 
+    }
 
-.like-restaurant1:hover , .like-restaurant2:hover, .like-restaurant3:hover, .like-restaurant4:hover {
+.like-restaurant1 :hover , .like-restaurant2:hover, .like-restaurant3:hover, .like-restaurant4:hover {
     font-size: 21px;
-    color:#9356DC ;
-    opacity: 1;
+    /*color:#9356DC ;
     transition-property: color;
-    transition-duration: 1s;
-}
+    transition-duration: 1s;*/
+    opacity: 1;
+    color: transparent;
+    background: -webkit-linear-gradient(0deg, #9356dc, #ff79da);
+    background-size: 100%;
+   -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*-moz-background-clip: text;
+    -moz-text-fill-color: transparent*/
+
+
+  
+
+  }
 
 /*******footer******/
 footer{
