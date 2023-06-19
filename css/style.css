@@ -35,18 +35,17 @@ body {
 }
  /**********loder*******/
  .loding{
-    display: flex;
+   display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    animation: fadeout 0.2s linear;
+    /*animation: fadeout 0.2s linear;*/
     animation-delay: 2.5s;
     animation-fill-mode: forwards;
     height: 100vh;
-    animation: fadeout 0.2s 3s forwards;
-
+    /*animation: fadeout 0.2s 3s forwards;*/
+    
  }
-
 
 .loader {
 border: 10px solid #f3f3f3;
@@ -58,6 +57,26 @@ animation: spin 1s linear infinite;
 position: absolute;
 
 }
+
+@keyframes load {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+  @keyframes fadeout {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+
+
 
 @keyframes slideUp {
     from {
@@ -76,8 +95,9 @@ position: absolute;
     to {
       opacity: 100%;
     }
-  }
-  @keyframes fadeout {
+}
+
+@keyframes fadeout {
     from {
       opacity: 100%;
     }
@@ -86,7 +106,9 @@ position: absolute;
       visibility: hidden;
     }
   }
-  @keyframes spinner {
+
+
+ /* @keyframes spinner {
     from {
       transform: rotate(0deg);
     }
@@ -101,12 +123,11 @@ position: absolute;
     to {
       transform: rotate(0deg);
     }
-  }
+  }*/
 
 
 
-
-@-webkit-keyframes spin {
+  @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
   }
@@ -123,7 +144,8 @@ position: absolute;
         -webkit-animation-name: animatepage;
         -webkit-animation-duration: 1s;
         animation-name: animatepage;
-        animation-duration: 1s
+        animation-duration: 1s;
+        animation-delay: 3s;
       }
       
       @-webkit-keyframes animatepage {
@@ -136,6 +158,8 @@ position: absolute;
         to{ bottom:0; opacity:1 }
     
       }
+
+
  
 /*******header*********/
 

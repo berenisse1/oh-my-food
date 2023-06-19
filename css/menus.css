@@ -71,13 +71,12 @@
       
       .slideInDown {
         animation-name: slideInDown;
-        position: relative;
-        -webkit-animation-name: slideInDown;
-        -webkit-animation-duration: 3s;
-        animation-name: slideInDown ;
         animation-duration: 3s;
         animation-delay: 0.8s;
-
+        -webkit-animation-name: slideInDown;
+        -webkit-animation-duration: 3s;
+        position: relative;
+        
       }
 
       @-webkit-keyframes slideInDown  {
@@ -102,13 +101,12 @@
         }
       }
       .slideInDown-plat {
-        animation-name: slideInDown-plat;
         position: relative;
-        -webkit-animation-name: slideInDown-plat;
-        -webkit-animation-duration: 3s;
         animation-name: slideInDown-plat;
         animation-duration: 3s;
         animation-delay: 0.3s;
+        -webkit-animation-name: slideInDown-plat;
+        -webkit-animation-duration: 3s;
       }
 
       @-webkit-keyframes slideInDown-plat  {
@@ -135,12 +133,11 @@
         }
       }
       .slideInDown-dessert {
-        animation-name: slideInDown-dessert;
         position: relative;
-        -webkit-animation-name: slideInDown-dessert;
-        -webkit-animation-duration: 3s;
         animation-name: slideInDown-dessert;
         animation-duration: 3s;
+        -webkit-animation-name: slideInDown-dessert;
+        -webkit-animation-duration: 3s;
         
       }
       @-webkit-keyframes slideInDown-dessert  {
