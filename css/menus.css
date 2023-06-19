@@ -285,15 +285,10 @@
     background-color: white; 
     box-shadow:0px 4px 15px 0px rgba(0, 0, 0, 0.15); 
     overflow: hidden;
-    text-overflow: ellipsis;
- 
+    white-space: nowrap;
     
- }
- 
-
-:hover.menu {
-    position: relative;
 }
+ 
 
 .list-menu{
     display: flex;
@@ -313,12 +308,16 @@
     margin: 0px;
 } 
 
-.menu-content {
-    padding: 12px;
-    width: 80%;
+:hover.menu .menu-title{
+    max-width: 228px;
     overflow: hidden;
     text-overflow: ellipsis;
-   
+    white-space: nowrap;
+}
+
+.menu-content {
+    padding: 12px;
+    width: 80%;  
 } 
 
 .menu .menu-text{ 
@@ -326,6 +325,14 @@ font-weight:300;
 font-size:15px;
 padding-top: 5px;
 margin: 0px;
+
+}
+
+:hover.menu .menu-text{
+    max-width: 228px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .menu-prix{
@@ -432,7 +439,13 @@ margin: 0px;
 }
 
 }
+:hover.menu .menu-title{
+   max-width: 287px;
+}
 
+:hover.menu .menu-text{
+    max-width: 287px;
+}
 /****desktop*****/
 @media(min-width:1440px) {
     .empty-heart-menu {
