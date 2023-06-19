@@ -348,27 +348,38 @@ header{
     position: relative;
     background: transparent;
     cursor: pointer;
+    display: flex;
    
-  height: 2rem;
-  padding: 0;
+ /* height: 2rem;
+  width: 2rem;
+  padding: 0;*/
+  
+}
+
+.card-like .span{
+   
+    margin: 0px;
+   
 }
 
 .empty-heart { 
     font-size: 21px;
     position: absolute;
+    opacity: 1;
     right: 27px;
     bottom: 50px;
-    opacity: 1;
+
    
 }
 
 :active .empty-heart {
     color:transparent;
+   
 }
 
 .full-heart {
-    position: absolute;
     font-size: 21px;
+    position: absolute;
     right: 27px;
     bottom: 50px;
     opacity: 0;
@@ -384,7 +395,7 @@ header{
     opacity: 1;
    display: inline;
     color: transparent;
-    background:linear-gradient(to right, purple, pink);
+    background:-webkit-linear-gradient(0deg, #9356dc, #ff79da);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
    /* background-size: 100%;*/
@@ -406,7 +417,7 @@ header{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background: -webkit-linear-gradient(0deg, #9356dc, #ff79da)
+    background: linear-gradient(to right, purple, pink);
  
   }
 

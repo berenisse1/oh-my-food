@@ -257,13 +257,7 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;*/
-    opacity: 1; 
-    background: linear-gradient(rgb(135, 72, 209), rgb(232, 102, 196));
-    -webkit-background-clip: text;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    
  
     transition-property: color;
     transition-duration: 1s;
@@ -337,7 +331,8 @@ margin: 0px;
 .menu-prix{
 
     position: relative;
-    right: 0px;   
+    width: 20px;
+    right: -20px;   
 }
 
 .bouton-check {
