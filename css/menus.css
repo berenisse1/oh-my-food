@@ -329,10 +329,10 @@ margin: 0px;
 }
 
 .menu-prix{
-
-    position: relative;
-    width: 20px;
-    right: -20px;   
+ position:absolute;
+ padding: 20px 10px 5px;
+ right: 0px;
+    
 }
 
 .bouton-check {
@@ -345,6 +345,8 @@ margin: 0px;
     color: transparent;
     position: absolute;
     right: 0px;
+
+    
 }
 /*********animation*********/
 
@@ -363,20 +365,20 @@ margin: 0px;
       to {
           margin-right: 59px;
       }
-  }
+}
   
 
-  .menu:hover , .menu:active {
+.menu:hover , .menu:active {
     .bouton-check {
         color: #fff;
         background-color: #99e2d0;
         animation-duration: 1s;
-        animation-name: slideright;
+        animation-name: slideright2;
         animation-direction: alternate;
        }
     
 }
-@keyframes slideright {
+@keyframes slideright2 {
     from {
         margin-right: -59px;
     }
