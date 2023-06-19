@@ -1,63 +1,102 @@
 
-@keyframes slideUp {
-    from {
-      transform: translatey(20px);
-      opacity: 0%;
-    }
-    to {
-      transform: translatey(0px);
-      opacity: 100%;
-    }
-  }
-  @keyframes fadein {
-    from {
-      opacity: 0%;
-    }
-    to {
-      opacity: 100%;
-    }
-  }
-  @keyframes fadeout {
-    from {
-      opacity: 100%;
-    }
-    to {
-      opacity: 0%;
-      visibility: hidden;
-    }
-  }
-  @keyframes spinner {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes spinneroff {
-    from {
-      transform: rotate(360deg);
-    }
-    to {
-      transform: rotate(0deg);
-    }
-  }
+
+     /**entré**/ 
+     @keyframes slideInDown {
+        from {
+          transform: translate3d(0, -100%, 0);
+          visibility: visible;
+        }
+      
+        to {
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      
+      .slideInDown {
+        animation-name: slideInDown;
+        position: relative;
+        -webkit-animation-name: slideInDown;
+        -webkit-animation-duration: 3s;
+        animation-name: slideInDown ;
+        animation-duration: 3s;
+        animation-delay: 0.8s;
+
+      }
+
+      @-webkit-keyframes slideInDown  {
+        from { top:-100px; opacity:0 } 
+        to { top:0px; opacity:1 }
+      }
+      
+      @keyframes slideInDown { 
+        from{ top:-100px; opacity:0 } 
+        to{ top:0; opacity:1 }
+         }
+
+       /*plat*/
+      @keyframes slideInDown-plat {
+        from {
+          transform: translate3d(0, -100%, 0);
+          visibility: visible;
+        }
+      
+        to {
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      .slideInDown-plat {
+        animation-name: slideInDown-plat;
+        position: relative;
+        -webkit-animation-name: slideInDown-plat;
+        -webkit-animation-duration: 3s;
+        animation-name: slideInDown-plat;
+        animation-duration: 3s;
+        animation-delay: 0.3s;
+      }
+
+      @-webkit-keyframes slideInDown-plat  {
+        from { top:-100px; opacity:0 } 
+        to { top:0px; opacity:1 }
+      }
+      
+      @keyframes slideInDown-plat { 
+        from{ top:-100px; opacity:0 } 
+        to{ top:0; opacity:1 }
+         }
 
 
 
+      /*dessert*/
+      @keyframes slideInDown-dessert {
+        from {
+          transform: translate3d(0, -100%, 0);
+          visibility: visible;
+        }
+      
+        to {
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      .slideInDown-dessert {
+        animation-name: slideInDown-dessert;
+        position: relative;
+        -webkit-animation-name: slideInDown-dessert;
+        -webkit-animation-duration: 3s;
+        animation-name: slideInDown-dessert;
+        animation-duration: 3s;
+        
+      }
+      @-webkit-keyframes slideInDown-dessert  {
+        from { top:-100px; opacity:0 } 
+        to { top:0px; opacity:1 }
+      }
+      
+      @keyframes slideInDown-dessert { 
+        from{ top:-100px; opacity:0 } 
+        to{ top:0; opacity:1 }
+         }
 
-@-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-
-     }
-
-
+/*
      .animatemenu {
         position: relative;
         -webkit-animation-name: animatemenu;
@@ -75,7 +114,7 @@
         from{ bottom:-100px; opacity:0 } 
         to{ bottom:0; opacity:1 }
     
-      }
+      }*/
 
 /***header-menu**/
 .header-menu{
