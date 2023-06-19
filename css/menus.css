@@ -1,3 +1,82 @@
+
+@keyframes slideUp {
+    from {
+      transform: translatey(20px);
+      opacity: 0%;
+    }
+    to {
+      transform: translatey(0px);
+      opacity: 100%;
+    }
+  }
+  @keyframes fadein {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  @keyframes fadeout {
+    from {
+      opacity: 100%;
+    }
+    to {
+      opacity: 0%;
+      visibility: hidden;
+    }
+  }
+  @keyframes spinner {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spinneroff {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+
+
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+
+     }
+
+
+     .animatemenu {
+        position: relative;
+        -webkit-animation-name: animatemenu;
+        -webkit-animation-duration: 3s;
+        animation-name: animatemenu;
+        animation-duration: 3s
+      }
+      
+      @-webkit-keyframes animatemenu {
+        from { bottom:-100px; opacity:0 } 
+        to { bottom:0px; opacity:1 }
+      }
+      
+      @keyframes animatemenu { 
+        from{ bottom:-100px; opacity:0 } 
+        to{ bottom:0; opacity:1 }
+    
+      }
+
 /***header-menu**/
 .header-menu{
     margin: 0 auto;
@@ -61,7 +140,7 @@
 }
 
 :active .empty-heart-menu {
-    color:;
+    color:transparent;
 }
 
 .full-heart-menu {
@@ -72,10 +151,7 @@
     left: 0px;
     font-size: 24px;
 
- background: linear-gradient(rgb(135, 72, 209), rgb(232, 102, 196));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+
     
 }
 
@@ -94,6 +170,10 @@
 :focus .like-menu1, :focus .like-menu2, :focus .like-menu3, :focus .like-menu4 {
     font-size: 21px;
     opacity: 1;
+    background: linear-gradient(rgb(135, 72, 209), rgb(232, 102, 196));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
  }  
 
 
@@ -113,7 +193,7 @@
  
     
  }
-
+ 
 
 :hover.menu {
     position: relative;

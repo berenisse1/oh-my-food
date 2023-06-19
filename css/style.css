@@ -59,6 +59,53 @@ position: absolute;
 
 }
 
+@keyframes slideUp {
+    from {
+      transform: translatey(20px);
+      opacity: 0%;
+    }
+    to {
+      transform: translatey(0px);
+      opacity: 100%;
+    }
+  }
+  @keyframes fadein {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  @keyframes fadeout {
+    from {
+      opacity: 100%;
+    }
+    to {
+      opacity: 0%;
+      visibility: hidden;
+    }
+  }
+  @keyframes spinner {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spinneroff {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+
+
+
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
@@ -67,25 +114,28 @@ position: absolute;
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+
      }
 
-  .animate-page {
-    position: relative;
-    -webkit-animation-name: animatepage;
-    -webkit-animation-duration: 1s;
-    animation-name: animatepage;
-    animation-duration: 1s
-  }
-  
-  @-webkit-keyframes animatepage {
-    from { bottom:-100px; opacity:0 } 
-    to { bottom:0px; opacity:1 }
-  }
-  
-  @keyframes animatepage { 
-    from{ bottom:-100px; opacity:0 } 
-    to{ bottom:0; opacity:1 }
-  }
+
+     .animatepage {
+        position: relative;
+        -webkit-animation-name: animatepage;
+        -webkit-animation-duration: 1s;
+        animation-name: animatepage;
+        animation-duration: 1s
+      }
+      
+      @-webkit-keyframes animatepage {
+        from { bottom:-100px; opacity:0 } 
+        to { bottom:0px; opacity:1 }
+      }
+      
+      @keyframes animatepage { 
+        from{ bottom:-100px; opacity:0 } 
+        to{ bottom:0; opacity:1 }
+    
+      }
  
 /*******header*********/
 
