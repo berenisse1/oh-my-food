@@ -343,12 +343,18 @@ header{
 }
 
 .card-like {
-    font-size: 27px;
+ 
     color:#353535;
-  
+    position: relative;
+    background: transparent;
+    cursor: pointer;
+   
+  height: 2rem;
+  padding: 0;
 }
 
 .empty-heart { 
+    font-size: 21px;
     position: absolute;
     right: 27px;
     bottom: 50px;
@@ -362,6 +368,7 @@ header{
 
 .full-heart {
     position: absolute;
+    font-size: 21px;
     right: 27px;
     bottom: 50px;
     opacity: 0;
@@ -375,10 +382,13 @@ header{
     transition-property: color;
     transition-duration: 1s;*/
     opacity: 1;
+   display: inline;
     color: transparent;
-    background: -webkit-linear-gradient(0deg, #9356dc, #ff79da);
-    background-size: 100%;
-   -webkit-transition: all 0.5s;
+    background:linear-gradient(to right, purple, pink);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   /* background-size: 100%;*/
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
     background-clip: text;
     -webkit-background-clip: text;
@@ -386,9 +396,27 @@ header{
     /*-moz-background-clip: text;
     -moz-text-fill-color: transparent*/
 
+  }
 
-  
+  .like-teste:hover{ 
+    opacity: 1;
+    font-size: 22px;
+    display: inline;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(0deg, #9356dc, #ff79da)
+ 
+  }
 
+  .fa-star {
+    position:absolute;
+    right: 27px;
+    bottom: 50px;
+    font-size: 22px;
+    opacity: 1px;
+    color: transparent;
   }
 
 /*******footer******/
