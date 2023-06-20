@@ -39,11 +39,11 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    /*animation: fadeout 0.2s linear;*/
+    animation: fadeout 0.2s linear;
     animation-delay: 2.5s;
     animation-fill-mode: forwards;
     height: 100vh;
-    /*animation: fadeout 0.2s 3s forwards;*/
+    animation: fadeout 0.2s 3s forwards;
     
  }
 
@@ -108,7 +108,7 @@ position: absolute;
   }
 
 
- /* @keyframes spinner {
+  @keyframes spinner {
     from {
       transform: rotate(0deg);
     }
@@ -123,7 +123,7 @@ position: absolute;
     to {
       transform: rotate(0deg);
     }
-  }*/
+  }
 
 
 
@@ -294,6 +294,7 @@ header{
 :hover.fa-mobile-screen, :hover.fa-list-ul,:hover.fa-store {
     color: #9356DC;
 }
+
 
 /*****restaurants*****/
 .restaurants {

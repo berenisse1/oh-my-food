@@ -201,15 +201,10 @@
     
  
 }
-.span-like {
-   position: relative;
-
-}
-
-
 
 .title-like{
     gap: 10px;
+    position: relative;
 }
 
 .Restaurant-title {
@@ -225,10 +220,10 @@
     color:#353535;
 }
 
-.empty-heart-menu {
+.empty-heart-menu, .full-heart-menu {
     position: absolute;
-    left:300px;
-    bottom: 38px;
+    right: 28px;
+    top: 17px;
     opacity: 1;
 }
 
@@ -237,11 +232,7 @@
 }
 
 .full-heart-menu {
-    position: absolute;
-    left: 300px;
     opacity: 0;  
-    bottom: 38px;
-    left: 0px;
     font-size: 24px;
 
 
@@ -249,13 +240,11 @@
 }
 
 .like-menu1:hover , .like-menu2:hover, .like-menu3:hover, .like-menu4:hover {
-    /*opacity: 1;
+    opacity: 1;
     background: linear-gradient(rgb(135, 72, 209), rgb(232, 102, 196));
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;*/
-    
- 
+    -webkit-text-fill-color: transparent;
     transition-property: color;
     transition-duration: 1s;
 }
@@ -426,13 +415,8 @@ margin: 0px;
     padding: 24px 100px 0px;
 }
 
-.empty-heart-menu {
-
-    left: 350px; 
-}
-
-.full-heart-menu {
-    left: 350px;
+.empty-heart-menu, .full-heart-menu {
+    right: 58px; 
 }
 
 }
@@ -444,13 +428,10 @@ margin: 0px;
     max-width: 287px;
 }
 /****desktop*****/
-@media(min-width:1440px) {
-    .empty-heart-menu {
+ @media(min-width:1440px) {
+    .empty-heart-menu, .full-heart-menu {
 
-        left: 470px; 
+        right: 190px; 
     }
     
-    .full-heart-menu {
-        left: 470px; 
-    }
-}
+} 
