@@ -1,4 +1,6 @@
-
+body{
+    display: flex;
+}
 /***animation effet fade in***/
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
@@ -11,8 +13,8 @@
 
      }
 
-     /*entré*/ 
-     @keyframes slideInDown {
+     /*dessert*/ 
+     @keyframes slideInDown-dessert {
         from {
           transform: translate3d(0, -100%, 0);
           visibility: visible;
@@ -23,21 +25,21 @@
         }
       }
       
-      .slideInDown {
-        animation-name: slideInDown;
+      .slideInDown-dessert {
+        animation-name: slideInDown-dessert;
         animation-duration: 3s;
         animation-delay: 0.8s;
-        -webkit-animation-name: slideInDown;
+        -webkit-animation-name: slideInDown-dessert;
         -webkit-animation-duration: 3s;
         position: relative;
       }
 
-      @-webkit-keyframes slideInDown  {
+      @-webkit-keyframes slideInDown-dessert  {
         from { top:-100px; opacity:0 } 
         to { top:0px; opacity:1 }
       }
       
-      @keyframes slideInDown { 
+      @keyframes slideInDown-dessert { 
         from{ top:-100px; opacity:0 } 
         to{ top:0; opacity:1 }
          }
@@ -72,8 +74,8 @@
         to{ top:0; opacity:1 }
          }
 
-      /*dessert*/
-      @keyframes slideInDown-dessert {
+      /*entré*/
+      @keyframes slideInDown {
         from {
           transform: translate3d(0, -100%, 0);
           visibility: visible;
@@ -83,15 +85,15 @@
           transform: translate3d(0, 0, 0);
         }
       }
-      .slideInDown-dessert {
+      .slideInDown {
         position: relative;
-        animation-name: slideInDown-dessert;
+        animation-name: slideInDown;
         animation-duration: 3s;
-        -webkit-animation-name: slideInDown-dessert;
+        -webkit-animation-name: slideInDown;
         -webkit-animation-duration: 3s;
         
       }
-      @-webkit-keyframes slideInDown-dessert  {
+      @-webkit-keyframes slideInDown  {
         from { top:-100px; opacity:0 } 
         to { top:0px; opacity:1 }
       }
@@ -187,6 +189,7 @@
 
 .menus {
     max-width: 1440px;
+    
 }
 
 .menu {
@@ -198,6 +201,7 @@
     box-shadow:0px 4px 15px 0px rgba(0, 0, 0, 0.15); 
     overflow: hidden;
     white-space: nowrap; 
+
 }
  
 
@@ -275,10 +279,10 @@ margin: 0px;
   }
   @keyframes slideright {
       from {
-          margin-right: 0px;
+          right: 0px;
       }
       to {
-          margin-right: 59px;
+          right: 59px;
       }
 }
   
