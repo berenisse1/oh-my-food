@@ -1,52 +1,5 @@
 
-/**
-@keyframes slideUp {
-    from {
-      transform: translatey(20px);
-      opacity: 0%;
-    }
-    to {
-      transform: translatey(0px);
-      opacity: 100%;
-    }
-  }
-  @keyframes fadein {
-    from {
-      opacity: 0%;
-    }
-    to {
-      opacity: 100%;
-    }
-  }
-  @keyframes fadeout {
-    from {
-      opacity: 100%;
-    }
-    to {
-      opacity: 0%;
-      visibility: hidden;
-    }
-  }
-  @keyframes spinner {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes spinneroff {
-    from {
-      transform: rotate(360deg);
-    }
-    to {
-      transform: rotate(0deg);
-    }
-  }
-
-
-
-
+/***animation effet fade in***/
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
@@ -56,8 +9,9 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 
-     }**/
-     /**entré**/ 
+     }
+
+     /*entré*/ 
      @keyframes slideInDown {
         from {
           transform: translate3d(0, -100%, 0);
@@ -76,7 +30,6 @@
         -webkit-animation-name: slideInDown;
         -webkit-animation-duration: 3s;
         position: relative;
-        
       }
 
       @-webkit-keyframes slideInDown  {
@@ -119,8 +72,6 @@
         to{ top:0; opacity:1 }
          }
 
-
-
       /*dessert*/
       @keyframes slideInDown-dessert {
         from {
@@ -150,30 +101,10 @@
         to{ top:0; opacity:1 }
          }
 
-/*
-     .animatemenu {
-        position: relative;
-        -webkit-animation-name: animatemenu;
-        -webkit-animation-duration: 3s;
-        animation-name: animatemenu;
-        animation-duration: 3s
-      }
-      
-      @-webkit-keyframes animatemenu {
-        from { bottom:-100px; opacity:0 } 
-        to { bottom:0px; opacity:1 }
-      }
-      
-      @keyframes animatemenu { 
-        from{ bottom:-100px; opacity:0 } 
-        to{ bottom:0; opacity:1 }
-    
-      }*/
 
 /***header-menu**/
 .header-menu{
     margin: 0 auto;
-   
 }
 
 .retour  {
@@ -198,8 +129,6 @@
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
-    
- 
 }
 
 .title-like{
@@ -215,15 +144,15 @@
 }
 
 .menu-like{
- 
     font-size: 27px;
     color:#353535;
+    position: relative;
 }
 
 .empty-heart-menu, .full-heart-menu {
     position: absolute;
     right: 28px;
-    top: 17px;
+    top: -40px;
     opacity: 1;
 }
 
@@ -233,10 +162,7 @@
 
 .full-heart-menu {
     opacity: 0;  
-    font-size: 24px;
-
-
-    
+    font-size: -40px;  
 }
 
 .like-menu1:hover , .like-menu2:hover, .like-menu3:hover, .like-menu4:hover {
@@ -271,8 +197,7 @@
     background-color: white; 
     box-shadow:0px 4px 15px 0px rgba(0, 0, 0, 0.15); 
     overflow: hidden;
-    white-space: nowrap;
-    
+    white-space: nowrap; 
 }
  
 
@@ -311,7 +236,6 @@ font-weight:300;
 font-size:15px;
 padding-top: 5px;
 margin: 0px;
-
 }
 
 :hover.menu .menu-text{
@@ -337,13 +261,10 @@ margin: 0px;
     border-radius: 0px 20px 20px 0px;
     color: transparent;
     position: absolute;
-    right: 0px;
-
-    
+    right: 0px;   
 }
+
 /*********animation*********/
-
-
 .menu:hover,.menu:active {
     .menu-prix {
       animation-duration: 1s;
@@ -427,6 +348,7 @@ margin: 0px;
 :hover.menu .menu-text{
     max-width: 287px;
 }
+
 /****desktop*****/
  @media(min-width:1440px) {
     .empty-heart-menu, .full-heart-menu {
