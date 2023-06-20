@@ -16,9 +16,6 @@ body {
     margin: 0px;
     padding: 0px;
     border: 0;
-    
- 
-  
 }
 
 .main-container {
@@ -33,8 +30,9 @@ body {
     text-decoration: none;
     color: black;
 }
+
  /**********loder*******/
- .loding{
+ .loader-container{
    display: flex;
     justify-content: center;
     align-items: center;
@@ -43,8 +41,7 @@ body {
     animation-delay: 2.5s;
     animation-fill-mode: forwards;
     height: 100vh;
-    animation: fadeout 0.2s 3s forwards;
-    
+    animation: fadeout 0.2s 3s forwards; 
  }
 
 .loader {
@@ -124,7 +121,6 @@ position: absolute;
       transform: rotate(0deg);
     }
   }
-
 
 
   @-webkit-keyframes spin {
@@ -249,6 +245,7 @@ header{
     gap: 25px; 
 }
 
+
 .fonctionnement .guide .fa-solid {
     position: absolute;
     top: 25px;
@@ -264,6 +261,7 @@ header{
     color: #fff; 
     position: absolute;
     left: -10px;
+    bottom: 30px;
 }
 
 .fa-fw{
@@ -368,33 +366,24 @@ header{
 }
 
 .card-like {
- 
     color:#353535;
     position: relative;
     background: transparent;
     cursor: pointer;
     display: flex;
-   
- /* height: 2rem;
-  width: 2rem;
-  padding: 0;*/
   
 }
 
-.card-like .span{
-   
-    margin: 0px;
-   
+.card-like .span{ 
+    margin: 0px;  
 }
 
 .empty-heart { 
     font-size: 21px;
-    position: absolute;
+    position: relative;
     opacity: 1;
-    right: 27px;
-    bottom: 50px;
-
-   
+    right: -300px;
+    bottom: 50px; 
 }
 
 :active .empty-heart {
@@ -403,35 +392,28 @@ header{
 }
 
 .full-heart {
-    font-size: 21px;
-    position: absolute;
-    right: 27px;
-    bottom: 50px;
+   font-size: 21px;
+    position: relative;
+    right: -277px;
+    bottom: 53px;
     opacity: 0;
     color: transparent;
  
     }
 
 .like-restaurant1 :hover , .like-restaurant2:hover, .like-restaurant3:hover, .like-restaurant4:hover {
-    font-size: 21px;
-    /*color:#9356DC ;
-    transition-property: color;
-    transition-duration: 1s;*/
+    font-size: 24px;
     opacity: 1;
-   display: inline;
+    display: inline;
     color: transparent;
     background:-webkit-linear-gradient(0deg, #9356dc, #ff79da);
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-   /* background-size: 100%;*/
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /*-moz-background-clip: text;
-    -moz-text-fill-color: transparent*/
-
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    background-size: 100%;
+ 
   }
 
   .like-teste:hover{ 
@@ -442,12 +424,12 @@ header{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background: linear-gradient(to right, purple, pink);
+    background: -webkit-linear-gradient(0deg, #9356dc, #ff79da);
  
   }
 
   .fa-star {
-    position:absolute;
+    position:relative;
     right: 27px;
     bottom: 50px;
     font-size: 22px;
@@ -469,11 +451,10 @@ footer .lien-footer {
     display: flex;
     flex-direction: column;
     padding: 0px 20px 20px 0px;
-   
     list-style: none;
     font-size: 16px;
-   
-    gap: 7px;    
+    gap: 7px; 
+    margin-bottom: 0px;   
 }
 
 footer .style-liens{
@@ -518,7 +499,7 @@ footer .style-liens{
     /***fonctionnement***/
 
     .fonctionnement{
-        padding: 20px 150px;
+        padding: 20px 45px;
     }
     .fonctionnement .title{
       padding: 0px;
@@ -546,7 +527,7 @@ footer .style-liens{
     .logo-footer{
         position: absolute;
         right: 2em;
-        padding: 1.7em 0em;
+        margin: 1.7em;
     }
 
 }
@@ -554,19 +535,32 @@ footer .style-liens{
 /*********destock***********/
 @media (min-width: 1440px) {
 
+    /***fonctionnement**/
+    .fonctionnement{
+        padding: 20px 150px;
+    }
+
+    /*restaurants*/
+    .empty-heart { 
+        right: -350px; 
+    }
+    
+    .full-heart {
+      right: -327px;
+      bottom: 53px;   
+    }
+
+   /***footer**/
     footer .lien-footer {
         flex-direction: row;
         justify-content: flex-end;
-        padding-right: 350px;
-
-       /* margin: 2em 20em; */ 
+        padding-right: 350px;  
     }
+
     .logo-footer{
         right: 5em;
-        /*padding: 2.5em 0em;*/
-
     }
     
 }
-
- 
+/* margin: 2em 20em; */ 
+  /*padding: 2.5em 0em;*/
