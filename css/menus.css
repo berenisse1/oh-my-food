@@ -264,12 +264,13 @@ margin: 0px;
     right: 0px;   
 }
 
-/*********animation*********/
+/*********animation carte*********/
 .menu:hover,.menu:active {
     .menu-prix {
       animation-duration: 1s;
       animation-name: slideright;
       animation-direction: alternate;
+      animation-fill-mode: forwards;
     }
   }
   @keyframes slideright {

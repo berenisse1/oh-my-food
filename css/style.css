@@ -42,6 +42,7 @@ body {
     animation-fill-mode: forwards;
     height: 100vh;
     animation: fadeout 0.2s 3s forwards; 
+    
  }
 
 .loader {
@@ -52,7 +53,6 @@ width: 120px;
 height: 120px;
 animation: spin 1s linear infinite;
 position: absolute;
-
 }
 
 @keyframes load {
@@ -74,7 +74,6 @@ position: absolute;
   }
 
 
-
 @keyframes slideUp {
     from {
       transform: translatey(20px);
@@ -93,6 +92,7 @@ position: absolute;
       opacity: 100%;
     }
 }
+
 
 @keyframes fadeout {
     from {
@@ -138,10 +138,11 @@ position: absolute;
      .animatepage {
         position: relative;
         -webkit-animation-name: animatepage;
-        -webkit-animation-duration: 1s;
+        -webkit-animation-duration: 2s;
         animation-name: animatepage;
-        animation-duration: 1s;
+        animation-duration: 2s;
         animation-delay: 3s;
+       
       }
       
       @-webkit-keyframes animatepage {
@@ -152,10 +153,11 @@ position: absolute;
       @keyframes animatepage { 
         from{ bottom:-100px; opacity:0 } 
         to{ bottom:0; opacity:1 }
-    
+
       }
 
 
+   
  
 /*******header*********/
 
@@ -303,7 +305,7 @@ header{
 
 .restaurants .restaurants-title { 
   
-   margin-left: 35px;
+   margin-left: 20px;
    padding-top: 30px;
 }
 
@@ -374,10 +376,6 @@ header{
   
 }
 
-.card-like .span{ 
-    margin: 0px;  
-}
-
 .empty-heart { 
     font-size: 21px;
     position: relative;
@@ -387,8 +385,7 @@ header{
 }
 
 :active .empty-heart {
-    color:transparent;
-   
+    color:transparent;  
 }
 
 .full-heart {
@@ -398,8 +395,7 @@ header{
     bottom: 53px;
     opacity: 0;
     color: transparent;
- 
-    }
+}
 
 .like-restaurant1 :hover , .like-restaurant2:hover, .like-restaurant3:hover, .like-restaurant4:hover {
     font-size: 24px;
@@ -413,7 +409,7 @@ header{
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     background-size: 100%;
- 
+
   }
 
   .like-teste:hover{ 
@@ -425,16 +421,6 @@ header{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background: -webkit-linear-gradient(0deg, #9356dc, #ff79da);
- 
-  }
-
-  .fa-star {
-    position:relative;
-    right: 27px;
-    bottom: 50px;
-    font-size: 22px;
-    opacity: 1px;
-    color: transparent;
   }
 
 /*******footer******/
@@ -471,34 +457,10 @@ footer .style-liens{
     nav .bouton-explorer {
         width: 218px;     
     }
-    /****restaurants****/
-    .restaurants{
-        padding: 0px 100px;
-        
-    }
-    .restaurants .cards {
-        justify-content: space-around;
-        display: flex;
-        flex-wrap: wrap;
-        margin: auto;
-       
-    }
 
-    .restaurants .cards .card { 
-        width: 45%;
-    }
+     /***fonctionnement***/
 
-    .restaurants .restaurants-title { 
-        margin-left: 52px;
-     }
-    
-    .full-heart {
-       
-     opacity: 0;
-    }
-    /***fonctionnement***/
-
-    .fonctionnement{
+     .fonctionnement{
         padding: 20px 45px;
     }
     .fonctionnement .title{
@@ -514,6 +476,27 @@ footer .style-liens{
         width: 33%;
     }
 
+    /****restaurants****/
+    .restaurants{
+        padding: 0px 100px;
+        
+    }
+    .restaurants .cards {
+        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto; 
+    }
+
+    .restaurants .cards .card { 
+        width: 45%;
+    }
+    .restaurants .restaurants-title { 
+        margin-left: 35px;
+    }
+    
+    
+   
     /****footer****/
     
     footer .lien-footer {
@@ -562,5 +545,3 @@ footer .style-liens{
     }
     
 }
-/* margin: 2em 20em; */ 
-  /*padding: 2.5em 0em;*/
