@@ -1,6 +1,4 @@
-body{
-    display: flex;
-}
+
 /***animation effet fade in***/
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
@@ -111,7 +109,7 @@ body{
 
 .retour  {
     position: absolute;
-    left: -80px;
+    left: 15px;
     font-size: 22px;
 }
 /*******bannière*******/
@@ -197,6 +195,7 @@ body{
     box-shadow:0px 4px 15px 0px rgba(0, 0, 0, 0.15); 
     overflow: hidden;
     white-space: nowrap; 
+    position: relative;
 
 }
  
@@ -239,7 +238,7 @@ margin: 0px;
 }
 
 :hover.menu .menu-text{
-    max-width: 228px;
+    width: 80%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
