@@ -133,28 +133,32 @@ body{
     padding: 10px;
 }
 
-.title-like{
-    gap: 10px;
-    position: relative;
-}
+/*.title-like{
+
+}*/
 
 .Restaurant-title {
     display: flex;
     justify-content: center;
     font-family: 'Shrikhand', cursive;
     font-weight: 400;
+    padding-right: 20px;
+
 }
 
 .menu-like{
-    font-size: 27px;
     color:#353535;
     position: relative;
+    background:transparent ;
+}
+.coeur-menu {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    font-size: 21px;
 }
 
-.empty-heart-menu, .full-heart-menu {
-    position: absolute;
-    right: 28px;
-    top: -40px;
+.empty-heart-menu {
     opacity: 1;
 }
 
@@ -163,29 +167,21 @@ body{
 }
 
 .full-heart-menu {
-    opacity: 0;  
-    font-size: -40px;  
+    opacity: 0; 
+
 }
 
-.like-menu1:hover , .like-menu2:hover, .like-menu3:hover, .like-menu4:hover {
+.menu-like :hover{
     opacity: 1;
-    background: linear-gradient(rgb(135, 72, 209), rgb(232, 102, 196));
-    -webkit-background-clip: text;
+    color: transparent;
+    background:-webkit-linear-gradient(0deg, #9356dc, #ff79da);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition-property: color;
-    transition-duration: 1s;
+   -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+    background-size: 100% 
 }
-
-:focus .like-menu1, :focus .like-menu2, :focus .like-menu3, :focus .like-menu4 {
-    font-size: 21px;
-    opacity: 1;
-    background: linear-gradient(rgb(135, 72, 209), rgb(232, 102, 196));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
- }  
-
 
 .menus {
     max-width: 1440px;
@@ -342,7 +338,7 @@ margin: 0px;
 }
 
 .empty-heart-menu, .full-heart-menu {
-    right: 58px; 
+   
 }
 
 }
@@ -358,7 +354,7 @@ margin: 0px;
  @media(min-width:1440px) {
     .empty-heart-menu, .full-heart-menu {
 
-        right: 190px; 
+        
     }
     
 } 
