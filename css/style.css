@@ -252,6 +252,11 @@ header{
     gap: 25px; 
 }
 
+.guide-content .content-text {
+    position: absolute;
+    right: 0;
+}
+
 
 .fonctionnement .guide .fa-solid {
     position: absolute;
@@ -375,18 +380,20 @@ header{
 .card-like {
     color:#353535;
     position: relative;
-    background: transparent;
-    cursor: pointer;
-    display: flex;
+   background: transparent;
+  
   
 }
 
-.empty-heart { 
+.coeur {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
     font-size: 21px;
-    position: relative;
+}
+
+.empty-heart { 
     opacity: 1;
-    right: -300px;
-    bottom: 50px; 
 }
 
 :active .empty-heart {
@@ -394,39 +401,25 @@ header{
 }
 
 .full-heart {
-   font-size: 21px;
-    position: relative;
-    right: -277px;
-    bottom: 53px;
     opacity: 0;
-    color: transparent;
-}
 
-.like-restaurant1 :hover , .like-restaurant2:hover, .like-restaurant3:hover, .like-restaurant4:hover {
-    font-size: 24px;
+}
+ .card-like :hover{
     opacity: 1;
-    display: inline;
     color: transparent;
     background:-webkit-linear-gradient(0deg, #9356dc, #ff79da);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-    background-size: 100%;
+   -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+    background-size: 100%
+  /* transition-property: color;
+   transition-duration: 2s;*/
 
-  }
 
-  .like-teste:hover{ 
-    opacity: 1;
-    font-size: 22px;
-    display: inline;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background: -webkit-linear-gradient(0deg, #9356dc, #ff79da);
-  }
+}
+
 
 /*******footer******/
 footer{
@@ -529,14 +522,7 @@ footer .style-liens{
     }
 
     /*restaurants*/
-    .empty-heart { 
-        right: -350px; 
-    }
-    
-    .full-heart {
-      right: -327px;
-      bottom: 53px;   
-    }
+ 
 
    /***footer**/
     footer .lien-footer {
