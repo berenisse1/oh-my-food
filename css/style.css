@@ -252,16 +252,15 @@ header{
     gap: 25px; 
 }
 
-.guide-content .content-text {
-    position: absolute;
-    right: 0;
+.guide-content{
+    position: relative;
 }
-
 
 .fonctionnement .guide .fa-solid {
     position: absolute;
-    top: 25px;
-    left: 30px;   
+    top: 20px;
+    right: 150px;  
+    padding-right: 25px;
 }
 
 .n1 button, .n2 button , .n3 button{
@@ -282,11 +281,11 @@ header{
 }
 
 .n1 button{ 
-    right: 35px;
+  /*  right: 35px;*/
 }
 
 .n2 button , .n3 button {
-    right: 40px;
+   /* right: 40px;*/
 }
 
 .guide .etapes  {
