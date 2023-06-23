@@ -258,10 +258,10 @@ header{
 }
 
 .fonctionnement .guide .fa-solid {
-    position: absolute;
+    position: relative;
     top: 18px;
-    right: -20px;  
-    padding-right: 25px;
+    right: -28px;  
+    padding-right: 50px;
 }
 
 .n1 button, .n2 button , .n3 button{
@@ -284,8 +284,6 @@ header{
 
 
 .guide .etapes  {
- 
-    justify-content: space-around;
     border: none ;
     border-radius: 20px;
     width: 80%;
