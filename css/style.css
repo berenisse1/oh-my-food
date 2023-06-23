@@ -254,12 +254,13 @@ header{
 
 .guide-content{
     position: relative;
+    display: flex;
 }
 
 .fonctionnement .guide .fa-solid {
     position: absolute;
-    top: 20px;
-    right: 150px;  
+    top: 18px;
+    right: -20px;  
     padding-right: 25px;
 }
 
@@ -280,16 +281,10 @@ header{
     width: 1.25em;
 }
 
-.n1 button{ 
-  /*  right: 35px;*/
-}
 
-.n2 button , .n3 button {
-   /* right: 40px;*/
-}
 
 .guide .etapes  {
-    display: flex;
+ 
     justify-content: space-around;
     border: none ;
     border-radius: 20px;

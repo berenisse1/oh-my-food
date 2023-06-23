@@ -266,10 +266,12 @@ margin: 0px;
 /*********animation carte*********/
 .menu:hover,.menu:active {
     .menu-prix {
-      animation-duration: 1s;
+      animation-duration: 0.5s;
       animation-name: slideright;
       animation-direction: alternate;
-      animation-fill-mode: forwards;
+      animation-fill-mode:forwards ;
+      animation-timing-function:ease-in-out;
+     
     }
   }
   @keyframes slideright {
@@ -286,10 +288,13 @@ margin: 0px;
     .bouton-check {
         color: #fff;
         background-color: #99e2d0;
-        animation-duration: 1s;
+        animation-duration: 0.5s;
         animation-name: slideright2;
         animation-direction: alternate;
-       }
+        animation-fill-mode:forwards ;
+        animation-timing-function:ease-in-out;
+
+    }
     
 }
 @keyframes slideright2 {
@@ -335,25 +340,24 @@ margin: 0px;
     width: 60%;
     padding: 24px 100px 0px;
 }
-
-.empty-heart-menu, .full-heart-menu {
-   
+.coeur-menu{
+    right: 70px;
 }
 
 }
-:hover.menu .menu-title{
+
+/*:hover.menu .menu-title{
    max-width: 287px;
 }
 
 :hover.menu .menu-text{
     max-width: 287px;
-}
+}*/
 
 /****desktop*****/
  @media(min-width:1440px) {
-    .empty-heart-menu, .full-heart-menu {
-
-        
-    }
+.coeur-menu {
+    right: 190px;       
+}
     
 } 
