@@ -1,105 +1,98 @@
 
 /***animation effet fade in***/
-@-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
+
+/*entré*/ 
+ @keyframes slideInDown-entre {
+    from {
+      transform: translate3d(0, -100%, 0);
+      visibility: visible;
+    }
+    
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+}
   
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+.slideInDown-entre {
+    animation-name: slideInDown-entre;
+    animation-duration: 3s;
+    -webkit-animation-name: slideInDown-entre;
+    -webkit-animation-duration: 3s;
+    position: relative;
+}
 
-     }
+  @-webkit-keyframes slideInDown-entre  {
+    from { top:-100px; opacity:0 } 
+    to { top:0px; opacity:1 }
+}
+  
+  @keyframes slideInDown-entre { 
+    from{ top:-100px; opacity:0 } 
+    to{ top:0; opacity:1 }
+}
+    
+/*plat*/
+@keyframes slideInDown-plat {
+    from {
+        transform: translate3d(0, -100%, 0);
+        visibility: visible;
+    }
 
-     /*dessert*/ 
-     @keyframes slideInDown-dessert {
-        from {
-          transform: translate3d(0, -100%, 0);
-          visibility: visible;
-        }
-      
-        to {
-          transform: translate3d(0, 0, 0);
-        }
-      }
-      
-      .slideInDown-dessert {
-        animation-name: slideInDown-dessert;
-        animation-duration: 3s;
-        animation-delay: 0.8s;
-        -webkit-animation-name: slideInDown-dessert;
-        -webkit-animation-duration: 3s;
-        position: relative;
-      }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
 
-      @-webkit-keyframes slideInDown-dessert  {
-        from { top:-100px; opacity:0 } 
-        to { top:0px; opacity:1 }
-      }
-      
-      @keyframes slideInDown-dessert { 
-        from{ top:-100px; opacity:0 } 
-        to{ top:0; opacity:1 }
-         }
+.slideInDown-plat {
+    position: relative;
+    animation-name: slideInDown-plat;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    -webkit-animation-name: slideInDown-plat;
+    -webkit-animation-duration: 3s;
+}
 
-       /*plat*/
-      @keyframes slideInDown-plat {
-        from {
-          transform: translate3d(0, -100%, 0);
-          visibility: visible;
-        }
+@-webkit-keyframes slideInDown-plat  {
+    from { top:-100px; opacity:0 } 
+    to { top:0px; opacity:1 }
+}
       
-        to {
-          transform: translate3d(0, 0, 0);
-        }
-      }
-      .slideInDown-plat {
-        position: relative;
-        animation-name: slideInDown-plat;
-        animation-duration: 3s;
-        animation-delay: 0.3s;
-        -webkit-animation-name: slideInDown-plat;
-        -webkit-animation-duration: 3s;
-      }
+@keyframes slideInDown-plat { 
+    from{ top:-100px; opacity:0 } 
+    to{ top:0; opacity:1 }
+}
 
-      @-webkit-keyframes slideInDown-plat  {
-        from { top:-100px; opacity:0 } 
-        to { top:0px; opacity:1 }
-      }
-      
-      @keyframes slideInDown-plat { 
-        from{ top:-100px; opacity:0 } 
-        to{ top:0; opacity:1 }
-         }
 
-      /*entré*/
-      @keyframes slideInDown {
-        from {
-          transform: translate3d(0, -100%, 0);
-          visibility: visible;
-        }
-      
-        to {
-          transform: translate3d(0, 0, 0);
-        }
-      }
-      .slideInDown {
-        position: relative;
-        animation-name: slideInDown;
-        animation-duration: 3s;
-        -webkit-animation-name: slideInDown;
-        -webkit-animation-duration: 3s;
-        
-      }
-      @-webkit-keyframes slideInDown  {
-        from { top:-100px; opacity:0 } 
-        to { top:0px; opacity:1 }
-      }
-      
-      @keyframes slideInDown-dessert { 
-        from{ top:-100px; opacity:0 } 
-        to{ top:0; opacity:1 }
-         }
+/*dessert*/
+@keyframes slideInDown-dessert {
+    from {
+      transform: translate3d(0, -100%, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+}
+
+.slideInDown-dessert {
+    position: relative;
+    animation-name: slideInDown-dessert;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    -webkit-animation-name: slideInDown-dessert;
+    -webkit-animation-duration: 3s; 
+}
+
+@-webkit-keyframes slideInDown-dessert  {
+    from { top:-100px; opacity:0 } 
+    to { top:0px; opacity:1 }
+}
+  
+@keyframes slideInDown-dessert { 
+    from{ top:-100px; opacity:0 } 
+    to{ top:0; opacity:1 }
+}  
 
 
 /***header-menu**/
