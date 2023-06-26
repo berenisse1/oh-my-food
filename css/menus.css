@@ -21,12 +21,12 @@
     position: relative;
 }
 
-  @-webkit-keyframes slideInDown-entre  {
+@-webkit-keyframes slideInDown-entre  {
     from { top:-100px; opacity:0 } 
     to { top:0px; opacity:1 }
 }
   
-  @keyframes slideInDown-entre { 
+@keyframes slideInDown-entre { 
     from{ top:-100px; opacity:0 } 
     to{ top:0; opacity:1 }
 }
@@ -37,7 +37,6 @@
         transform: translate3d(0, -100%, 0);
         visibility: visible;
     }
-
     to {
         transform: translate3d(0, 0, 0);
     }
@@ -271,41 +270,37 @@ margin: 0px;
 
 /*********animation selecteur menu*********/
 
-.menu:hover,.menu:active {
-    .menu-prix {
-      animation-duration: 1s;
-      animation-name: slideright;
-      animation-fill-mode: forwards;
-      animation-direction: alternate;
-     
-    }
+ .menu:hover .menu-prix, .menu:hover .menu-prix{
+    animation-duration: 1s;
+    animation-name: slideright;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;   
 }
-  @keyframes slideright {
-      from {
-          right: 0px;
-      }
-      to {
-          right: 59px;
-      }
+
+@keyframes slideright {
+    from {
+        right: 0px;
+    }
+    to {
+        right: 59px;
+    }
 }
   
 
-.menu:hover , .menu:active {
-    .bouton-check {
-        color: #fff;
-        background-color: #99e2d0;
-        animation-name: slideright2;
-        animation-duration: 1s;
-        animation-direction: alternate;  
-    }
-    
+.menu:hover .bouton-check, .menu:active .bouton-check {
+    color: #fff;
+    background-color: #99e2d0;
+    animation-name: slideright2;
+    animation-duration: 1s;
+    animation-direction: alternate;         
 }
+
 @keyframes slideright2 {
     from {
-        margin-right: -59px;
+        right: -59px;
     }
     to {
-        margin-right: 0px;
+        right: 0px;
     }
 }
 
@@ -341,30 +336,23 @@ margin: 0px;
 
 /*******tablette************/
 @media (min-width: 1024px) {
-.carte {
-    margin:auto;
-    max-width: 1055px;
-    width: 60%;
-    padding: 24px 100px 0px;
-}
-.coeur-menu{
-    right: 70px;
-}
+    .carte {
+        margin:auto;
+        max-width: 1055px;
+        width: 60%;
+        padding: 24px 100px 0px;
+    }
+
+   .coeur-menu {
+       right: 70px;
+    }
 
 }
-
-/*:hover.menu .menu-title{
-   max-width: 287px;
-}
-
-:hover.menu .menu-text{
-    max-width: 287px;
-}*/
 
 /****desktop*****/
  @media(min-width:1440px) {
-.coeur-menu {
-    right: 190px;       
-}
+    .coeur-menu {
+        right: 190px;       
+    }
     
 } 
