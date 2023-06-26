@@ -228,6 +228,12 @@ header{
 
 }
 
+.navigation .bouton-explorer:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+
 .navigation .bouton-explorer p {
     font-size: 16px;
     font-weight: 500;

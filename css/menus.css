@@ -7,7 +7,7 @@
       transform: translate3d(0, -100%, 0);
       visibility: visible;
     }
-    
+
     to {
       transform: translate3d(0, 0, 0);
     }
@@ -197,12 +197,24 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    position: relative;
+    margin-bottom: 40px;
 }
 .list-menu .menu-service {
     font-weight: 300;
     font-size: 16px;
-    text-decoration: underline;
-    text-decoration-color: #99e2d0; 
+   
+ }
+
+ .list-menu .menu-service::after{
+    content:"";
+    background: #99e2d0;
+    position: absolute;
+    top: 38px;
+    left: 0px;
+    height: 4px;
+    width: 40px;
+  
  }
 
 .menu .menu-title {
@@ -217,6 +229,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
 
 .menu-content {
     padding: 12px;
@@ -256,17 +269,17 @@ margin: 0px;
     right: 0px;   
 }
 
-/*********animation carte*********/
+/*********animation selecteur menu*********/
+
 .menu:hover,.menu:active {
     .menu-prix {
-      animation-duration: 0.5s;
+      animation-duration: 1s;
       animation-name: slideright;
+      animation-fill-mode: forwards;
       animation-direction: alternate;
-      animation-fill-mode:forwards ;
-      animation-timing-function:ease-in-out;
      
     }
-  }
+}
   @keyframes slideright {
       from {
           right: 0px;
@@ -281,12 +294,9 @@ margin: 0px;
     .bouton-check {
         color: #fff;
         background-color: #99e2d0;
-        animation-duration: 0.5s;
         animation-name: slideright2;
-        animation-direction: alternate;
-        animation-fill-mode:forwards ;
-        animation-timing-function:ease-in-out;
-
+        animation-duration: 1s;
+        animation-direction: alternate;  
     }
     
 }
@@ -309,10 +319,14 @@ margin: 0px;
     box-shadow:0px 4px 15px 0px rgba(0, 0, 0, 0.15);  
     width: 218px;
     padding: 3px 1px; 
-    margin: 50px;
     height: 50px;
     align-items: center;
 } 
+
+.bouton-commander:hover{
+    transform: scale(1.02);
+    opacity: 0.9;
+}
 
 .commander{
     display: flex;
