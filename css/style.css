@@ -244,8 +244,7 @@ header{
 }
 
 .restaurants .restaurants-title { 
-   margin-left: 15px;
-   padding-top: 30px;
+   padding: 40px 15px 0px 15px;
 }
 
 .restaurants .cards {
@@ -405,7 +404,7 @@ footer .style-liens{
     }
 
     .restaurants .restaurants-title { 
-        margin-left: 30px;
+        padding-left: 20px;
     }
     
     .restaurants .cards {
@@ -455,5 +454,10 @@ footer .style-liens{
     .logo-footer{
         right: 5em;
     }
+    /****restaurants****/
+    .restaurants .restaurants-title { 
+        padding-left: 34px;
+    }
     
 }
+
