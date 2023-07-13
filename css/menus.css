@@ -13,10 +13,10 @@
     }
 } 
  
-.slideInDown-entre {
-    animation-name: slideInDown-entre;
+.fadeInDown-entre {
+    animation-name: fadeInDown-entre;
     animation-duration: 3s;
-    -webkit-animation-name: slideInDown-entre;
+    -webkit-animation-name: fadeInDown-entre;
     -webkit-animation-duration: 3s;
     position: relative;
 }
@@ -33,12 +33,12 @@
     }
 } 
 
-.slideInDown-plat {
+.fadeInDown-plat {
     position: relative;
-    animation-name: slideInDown-plat;
+    animation-name: fadeInDown-plat;
     animation-duration: 3s;
     animation-delay: 0.5s;
-    -webkit-animation-name: slideInDown-plat;
+    -webkit-animation-name: fadeInDown-plat;
     -webkit-animation-duration: 3s;
 }
 
@@ -54,12 +54,12 @@
     }
 } 
 
-.slideInDown-dessert {
+.fadeInDown-dessert {
     position: relative;
-    animation-name: slideInDown-dessert;
+    animation-name: fadeInDown-dessert;
     animation-duration: 3s;
     animation-delay: 1s;
-    -webkit-animation-name: slideInDown-dessert;
+    -webkit-animation-name: fadeInDown-dessert;
     -webkit-animation-duration: 3s; 
 }
 
@@ -116,7 +116,7 @@
     border-radius: 20px;
     width: 100%;
     height:69px;
-    background-color:var(--primery-color); 
+    background-color:var(--primary-color); 
     box-shadow:0px 4px 15px 0px rgba(0, 0, 0, 0.15); 
     overflow: hidden;
     white-space: nowrap; 
@@ -257,11 +257,7 @@ margin: 0px;
     justify-content: center;
 }
 
-.btn p {
-    font-size: 16px;
-    font-weight: 500;
-    color: #fff;
-}
+
 
 /*******tablette************/
 @media (min-width: 1024px) {
