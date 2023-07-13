@@ -168,7 +168,6 @@ header{
     font-weight: 500;
     color: var(--primary-color);
 }
-
 /******fonctionnement*****/
 .fonctionnement{ 
     max-width: 1440px;
@@ -212,7 +211,7 @@ header{
 }
 
 .fa-fw{
-    text-align: center;/*****/
+    text-align: center;/**********************************************************************/
     width: 1.25em;
 }
 
@@ -299,9 +298,9 @@ header{
 }
 
 .like {
-    color:var(--third-color);
+    color:#353535;
     position: relative;
-    background: transparent;
+    background: transparent !important;
 }
 
 .coeur {

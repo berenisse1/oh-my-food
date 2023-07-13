@@ -1,18 +1,18 @@
 
-/***animation effet fade in***/
+/***animation effet fadeInDown***/
 
 /*entré*/ 
- @keyframes slideInDown-entre {
+@keyframes fadeInDown-entre {
     from {
-      transform: translate3d(0, -100%, 0);
-      visibility: visible;
+       opacity: 0;
+       transform: translate3d(0, -80%, 0);
     }
-
     to {
-      transform: translate3d(0, 0, 0);
+       opacity: 1;
+       transform: translate3d(0,0,0);
     }
-}
-  
+} 
+ 
 .slideInDown-entre {
     animation-name: slideInDown-entre;
     animation-duration: 3s;
@@ -20,27 +20,18 @@
     -webkit-animation-duration: 3s;
     position: relative;
 }
-
-@-webkit-keyframes slideInDown-entre  {
-    from { top:-100px; opacity:0 } 
-    to { top:0px; opacity:1 }
-}
   
-@keyframes slideInDown-entre { 
-    from{ top:-100px; opacity:0 } 
-    to{ top:0; opacity:1 }
-}
-    
 /*plat*/
-@keyframes slideInDown-plat {
+@keyframes fadeInDown-entre {
     from {
-        transform: translate3d(0, -100%, 0);
-        visibility: visible;
+       opacity: 0;
+       transform: translate3d(0, -80%, 0);
     }
     to {
-        transform: translate3d(0, 0, 0);
+       opacity: 1;
+       transform: translate3d(0,0,0);
     }
-}
+} 
 
 .slideInDown-plat {
     position: relative;
@@ -51,28 +42,17 @@
     -webkit-animation-duration: 3s;
 }
 
-@-webkit-keyframes slideInDown-plat  {
-    from { top:-100px; opacity:0 } 
-    to { top:0px; opacity:1 }
-}
-      
-@keyframes slideInDown-plat { 
-    from{ top:-100px; opacity:0 } 
-    to{ top:0; opacity:1 }
-}
-
-
 /*dessert*/
-@keyframes slideInDown-dessert {
+@keyframes fadeInDown-entre {
     from {
-      transform: translate3d(0, -100%, 0);
-      visibility: visible;
+       opacity: 0;
+       transform: translate3d(0, -80%, 0);
     }
-  
     to {
-      transform: translate3d(0, 0, 0);
+       opacity: 1;
+       transform: translate3d(0,0,0);
     }
-}
+} 
 
 .slideInDown-dessert {
     position: relative;
@@ -82,17 +62,6 @@
     -webkit-animation-name: slideInDown-dessert;
     -webkit-animation-duration: 3s; 
 }
-
-@-webkit-keyframes slideInDown-dessert  {
-    from { top:-100px; opacity:0 } 
-    to { top:0px; opacity:1 }
-}
-  
-@keyframes slideInDown-dessert { 
-    from{ top:-100px; opacity:0 } 
-    to{ top:0; opacity:1 }
-}  
-
 
 /***header-menu**/
 .header-menu{
@@ -107,15 +76,14 @@
 /*******bannière*******/
 .menu-restaurant-image{
     width: 100%;
-    height: 275px;
-    object-fit: cover;  
+    height: 275px;  
 }
 
 /******carte********/
 .carte {
     position: relative;
     bottom: 24px;
-    background-color:#f7f7f7;
+    background-color: var(--second-color);
     background-image: initial;
     border-radius: 24px 24px;
     width: 100%;
@@ -132,11 +100,6 @@
 
 }
 
-.menu-like{
-    color:#353535;
-    position: relative;
-    background:transparent ;
-}
 .coeur-menu {
     position: absolute;
     right: 25px;
@@ -144,34 +107,8 @@
     font-size: 23px;
 }
 
-.empty-heart-menu {
-    opacity: 1;
-}
-
-:active .empty-heart-menu {
-    color:transparent;
-}
-
-.full-heart-menu {
-    opacity: 0; 
-
-}
-
-.menu-like :hover{
-    opacity: 1;
-    color: transparent;
-    background:-webkit-linear-gradient(0deg, #9356dc, #ff79da);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-   -webkit-transition: all 0.1s;
-    transition: all 0.1s;
-    background-size: 100% 
-}
-
 .menus {
-    max-width: 1440px;
-    
+    max-width: 1440px;  
 }
 
 .menu {
@@ -179,12 +116,11 @@
     border-radius: 20px;
     width: 100%;
     height:69px;
-    background-color: white; 
+    background-color:var(--primery-color); 
     box-shadow:0px 4px 15px 0px rgba(0, 0, 0, 0.15); 
     overflow: hidden;
     white-space: nowrap; 
     position: relative;
-
 }
  
 
@@ -201,7 +137,7 @@
    
  }
 
- .list-menu .menu-service::after{
+ .list-menu .menu-service::after{ /**pseudo élément :after pour insérer soulignement vert**/
     content:"";
     background: #99e2d0;
     position: absolute;
@@ -219,12 +155,11 @@
 } 
 
 :hover.menu .menu-title{
-    max-width: 228px;
+    max-width: 80%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-
 
 .menu-content {
     padding: 12px;
@@ -246,10 +181,9 @@ margin: 0px;
 }
 
 .menu-prix{
- position:absolute;
- padding: 20px 15px 5px;
- right: 0px;
-    
+    position:absolute;
+    padding: 20px 15px 5px;
+    right: 0px;  
 }
 
 .bouton-check {
@@ -282,7 +216,6 @@ margin: 0px;
     }
 }
   
-
 .menu:hover .bouton-check, .menu:active .bouton-check {
     color: #fff;
     background-color: #99e2d0;
@@ -300,7 +233,7 @@ margin: 0px;
     }
 }
 
-.bouton-commander{
+.btn-order{
     display: flex;
     justify-content: center;
     border-radius: 60px;
@@ -314,17 +247,17 @@ margin: 0px;
     align-items: center;
 } 
 
-.bouton-commander:hover{
+/*.btn-order:hover{
     transform: scale(1.02);
     opacity: 0.9;
-}
+}*/
 
 .commander{
     display: flex;
     justify-content: center;
 }
 
-.btn-comender {
+.btn p {
     font-size: 16px;
     font-weight: 500;
     color: #fff;
