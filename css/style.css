@@ -1,14 +1,14 @@
 /********général********/
-* {
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-}
-
 :root {
     --primary-color: #ffff;
     --second-color: #f6f6f6;
     --third-color: #353535;
     --forth-color: #9356DC;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -292,9 +292,9 @@ header{
 }
 
 .like {
-    color:#353535;
+    color:var(--third-color);
     position: relative;
-    background: transparent !important;
+    background: transparent;
 }
 
 .coeur {

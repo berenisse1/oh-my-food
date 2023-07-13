@@ -202,7 +202,7 @@ margin: 0px;
 /*********animation selecteur menu*********/
 
  .menu:hover .menu-prix, .menu:hover .menu-prix{
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     animation-name: slideright;
     animation-fill-mode: forwards;
     animation-direction: alternate;   
@@ -221,7 +221,7 @@ margin: 0px;
     color: #fff;
     background-color: #99e2d0;
     animation-name: slideright2;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     animation-direction: alternate;         
 }
 
