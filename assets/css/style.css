@@ -336,6 +336,7 @@ footer{
 
 footer .logo-footer{
     -webkit-filter: invert(100%);
+    filter: invert(100%);
 }
 
 footer .lien-footer {
