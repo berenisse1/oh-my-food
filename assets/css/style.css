@@ -324,7 +324,7 @@ header{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
    -webkit-transition: all 0.1s;
-    transition: opacity 0.1s;
+   transition: all 0.1s;
 
 }
 
