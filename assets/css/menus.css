@@ -147,7 +147,12 @@
     height: 4px;
     width: 40px;
   
- }
+}
+
+.menu-content {
+    padding: 12px;
+    width: 80%;  
+} 
 
 .menu .menu-title {
     font-weight: 500;
@@ -162,16 +167,11 @@
     white-space: nowrap;
 }
 
-.menu-content {
-    padding: 12px;
-    width: 80%;  
-} 
-
 .menu .menu-text{ 
-font-weight:300;
-font-size:15px;
-padding-top: 5px;
-margin: 0px;
+    font-weight:300;
+    font-size:15px;
+    padding-top: 5px;
+    margin: 0px;
 }
 
 :hover.menu .menu-text{
@@ -257,24 +257,25 @@ margin: 0px;
 
 
 /*******tablette************/
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
     .carte {
         margin:auto;
         max-width: 1055px;
-        width: 60%;
+        width: 70%;
         padding: 24px 100px 0px;
     }
 
    .coeur-menu {
-       right: 70px;
+       right: 4px;
     }
+
 
 }
 
 /****desktop*****/
- @media(min-width:1440px) {
+ @media(min-width:1024px) {
     .coeur-menu {
-        right: 190px;       
+        right: 85px;       
     }
     
 } 

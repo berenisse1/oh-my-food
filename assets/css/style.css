@@ -323,8 +323,8 @@ header{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-   -webkit-transition: all 0.1s;
-   transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
 
 }
 
@@ -356,7 +356,7 @@ footer .style-liens{
 }
 
 /***********tablette****************/
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
    
     /*******navigation********/
     nav .bouton-explorer {
@@ -403,22 +403,22 @@ footer .style-liens{
     
     /****footer****/
     footer .lien-footer {
-        padding-right: 150px;
-        gap: 20px;
-        justify-content: center;
+       font-size: 15px;
+        gap: 10px;
         margin-top: 40px;
         flex-direction: row;
+        
     }
 
     .logo-footer{
         position: absolute;
-        right: 2em;
-        margin: 1.7em;
+        right: 0px;
+        margin: 26px;
     }
 }
 
 /*********destock***********/
-@media (min-width: 1440px){  
+@media (min-width: 1024px){  
 
     /***fonctionnement**/
     .fonctionnement{
@@ -427,14 +427,13 @@ footer .style-liens{
 
    /***footer**/
     footer .lien-footer {
+        font-size: 16px;
         flex-direction: row;
         justify-content: flex-end;
         padding-right: 350px;  
     }
 
-    .logo-footer{
-        right: 5em;
-    }
+   
     /****restaurants****/
     .restaurants .restaurants-title { 
         padding-left: 34px;
